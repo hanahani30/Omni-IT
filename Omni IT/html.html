@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🌍 HTML</h1>
+            <p>لغة لإنشاء هياكل صفحات الويب</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>مقدمة عن HTML</h2>
+            <p>HTML (HyperText Markup Language) هي لغة لإنشاء صفحات الويب، تُستخدم لإنشاء الهيكل والمحتوى. تعتمد على الوسوم (Tags) لتعريف عناصر الصفحة.</p>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌍 أساسيات HTML</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم الوسوم الأساسية وهيكل صفحة HTML</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔗 الروابط والصور</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إدراج روابط وصور في صفحات الويب</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📋 النماذج والقوائم</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إنشاء نماذج وقوائم تفاعلية</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Structure -->
+        <section class="lang-section">
+            <h2>الهيكل الأساسي لصفحة HTML</h2>
+            <div class="code-block">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ar"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;مرحباً&lt;/h1&gt;
+    &lt;p&gt;هذا نص في الصفحة&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Headings and Paragraphs -->
+        <section class="lang-section">
+            <h2>العناوين والفقرات</h2>
+            <div class="code-block">
+                <pre><code>&lt;!-- عناوين (Headings) --&gt;
+&lt;h1&gt;العنوان الرئيسي&lt;/h1&gt;
+&lt;h2&gt;عنوان ثانوي&lt;/h2&gt;
+&lt;h3&gt;عنوان أصغر&lt;/h3&gt;
+
+&lt;!-- فقرات (Paragraphs) --&gt;
+&lt;p&gt;هذا نص العنوان الأول&lt;/p&gt;
+&lt;p&gt;هذا نص العنوان الثاني&lt;/p&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Links and Images -->
+        <section class="lang-section">
+            <h2>الروابط والصور</h2>
+            <div class="code-block">
+                <pre><code>&lt;!-- الروابط (Links) --&gt;
+&lt;a href="https://google.com"&gt;اضغط هنا&lt;/a&gt;
+&lt;a href="page2.html"&gt;انتقل للصفحة الثانية&lt;/a&gt;
+
+&lt;!-- الصور (Images) --&gt;
+&lt;img src="image.jpg" alt="وصف الصورة"&gt;
+&lt;img src="logo.png" width="200" height="100"&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Lists -->
+        <section class="lang-section">
+            <h2>القوائم (Lists)</h2>
+            <h3>قائمة غير مرتبة:</h3>
+            <div class="code-block">
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;العنصر الأول&lt;/li&gt;
+    &lt;li&gt;العنصر الثاني&lt;/li&gt;
+    &lt;li&gt;العنصر الثالث&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <h3>قائمة مرتبة:</h3>
+            <div class="code-block">
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;الخطوة الأولى&lt;/li&gt;
+    &lt;li&gt;الخطوة الثانية&lt;/li&gt;
+    &lt;li&gt;الخطوة الثالثة&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Forms -->
+        <section class="lang-section">
+            <h2>النماذج (Forms)</h2>
+            <div class="code-block">
+                <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;الاسم:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;label for="email"&gt;البريد الإلكتروني:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;label for="message"&gt;الرسالة:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;إرسال&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Semantic Tags -->
+        <section class="lang-section">
+            <h2>الوسوم الدلالية (Semantic Tags)</h2>
+            <div class="code-block">
+                <pre><code>&lt;header&gt;
+    &lt;h1&gt;رأس الصفحة&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href="#"&gt;رابط 1&lt;/a&gt;
+    &lt;a href="#"&gt;رابط 2&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;عنوان المقال&lt;/h2&gt;
+        &lt;p&gt;محتوى المقال...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;جميع الحقوق محفوظة&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب بنفسك</h3>
+            <p style="color: #f0f0f0; margin-bottom: 1.5rem;">اكتب كود HTML وشاهد النتيجة مباشرة</p>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="htmlEditor" placeholder="&lt;!DOCTYPE html&gt;
+&lt;html dir='rtl'&gt;
+&lt;body style='font-family: Arial;'&gt;
+
+&lt;h1&gt;مرحباً في HTML&lt;/h1&gt;
+&lt;p&gt;هذا نص تجريبي يظهر مباشرة&lt;/p&gt;
+&lt;button&gt;اضغط هنا&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;" class="html-code"></textarea>
+                </div>
+                <div class="editor-output" id="htmlOutput" style="background: white;">
+                    <!-- Preview will be shown here -->
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="runHtmlBtn">▶️ شغّل الكود</button>
+                <button class="clear-btn" id="clearHtmlBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌐 أساسيات HTML</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم الوسوم الأساسية وهيكل صفحة HTML</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔗 الروابط والصور</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إدراج روابط وصور في صفحات الويب</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📋 النماذج والقوائم</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إنشاء نماذج وقوائم تفاعلية</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة إلى لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

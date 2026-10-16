@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kotlin - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🎯 Kotlin</h1>
+            <p>لغة برمجة حديثة قابلة للتوافق مع Java</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن Kotlin</h2>
+            <p>Kotlin هي لغة برمجة حديثة يدعمها Google رسمياً لتطوير تطبيقات Android. تتميز بالأمان والإيجاز والتوافق الكامل مع Java.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 أساسيات Kotlin</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">المتغيرات والدوال</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📱 تطوير Android</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">بناء تطبيقات Android</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚙️ الفئات والوراثة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">OOP في Kotlin</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرنامج الأول - Hello World</h2>
+            <div class="code-block">
+                <pre><code>fun main() {
+    println("مرحباً في Kotlin!")
+}
+
+النتيجة:
+مرحباً في Kotlin!
+
+شرح الكود:
+├─ fun main() : دالة البرنامج الرئيسية
+└─ println() : طباعة النص</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>المتغيرات والدوال</h2>
+            <div class="code-block">
+                <pre><code">fun main() {
+    // متغير ثابت
+    val name = "أحمد"
+    
+    // متغير قابل للتغيير
+    var age = 25
+    age = 26
+    
+    // تحديد النوع صراحة
+    val email: String = "ahmed@example.com"
+    val score: Int = 95
+    val height: Double = 1.75
+    
+    println("الاسم: $name")
+    println("العمر: $age")
+    println("البريد: $email")
+    println("الطول: $height متر")
+    
+    // المصفوفات
+    val numbers = listOf(1, 2, 3, 4, 5)
+    val students = listOf("أحمد", "فاطمة", "علي")
+    
+    println("الأرقام: $numbers")
+    println("الطلاب: $students")
+}
+
+// دالة مخصصة
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+
+// دالة بتعبير واحد
+fun multiply(a: Int, b: Int) = a * b
+
+النتيجة:
+الاسم: أحمد
+العمر: 26
+البريد: ahmed@example.com
+الطول: 1.75 متر
+الأرقام: [1, 2, 3, 4, 5]
+الطلاب: [أحمد، فاطمة، علي]</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الفئات والكائنات</h2>
+            <div class="code-block">
+                <pre><code">// فئة بسيطة
+class Student(
+    val name: String,
+    val age: Int,
+    val gpa: Double
+) {
+    fun display() {
+        println("الاسم: $name")
+        println("العمر: $age")
+        println("المعدل: $gpa")
+    }
+}
+
+// فئة مشتقة
+class GraduateStudent(
+    name: String,
+    age: Int,
+    gpa: Double,
+    val graduationYear: Int
+) : Student(name, age, gpa) {
+    fun displayGraduation() {
+        println("سنة التخرج: $graduationYear")
+    }
+}
+
+fun main() {
+    val student = Student("فاطمة", 20, 3.8)
+    student.display()
+    
+    val grad = GraduateStudent("علي", 25, 3.9, 2023)
+    grad.display()
+    grad.displayGraduation()
+}
+
+النتيجة:
+الاسم: فاطمة
+العمر: 20
+المعدل: 3.8
+الاسم: علي
+العمر: 25
+المعدل: 3.9
+سنة التخرج: 2023</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📱 استخدامات Kotlin الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. تطبيقات Android
+   └─ مثال: تطبيقات الهواتف الذكية
+      ├─ Google أعلنت Kotlin لغة الاختيار لـ Android
+      ├─ تطبيقات Uber و Netflix
+      ├─ ملايين التطبيقات
+      └─ الخيار الأفضل حالياً
+
+2. تطبيقات الويب
+   └─ مثال: Ktor framework
+      ├─ خوادم فعالة
+      ├─ APIs REST
+      └─ تطبيقات الويب الكاملة
+
+3. البرامج عبر المنصات
+   └─ مثال: Kotlin Multiplatform
+      ├─ كود مشترك بين Android و iOS
+      ├─ الويب والخادم
+      └─ توفير الوقت والجهد
+
+4. البرامج المحمولة
+   └─ مثال: تطبيقات متعددة المنصات
+      ├─ Android و iOS من كود واحد
+      ├─ الويب والتطبيقات المحلية
+      └─ Android Studio الدعم الكامل</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 Lambdas و High-Order Functions</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">البرمجة الوظيفية</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 الملفات والبيانات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">معالجة البيانات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 المشاريع الحقيقية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تطبيقات كاملة</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

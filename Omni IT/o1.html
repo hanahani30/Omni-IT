@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>OMNI IT </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='s1.css'>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/332/153/non_2x/code-flat-color-outline-icon-free-png.png">
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" data-submenu="home">الرئيسية</a></li>
+                <li><a href="#" class="nav-link" data-submenu="languages">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link" data-submenu="networking">الشبكات</a></li>
+                <li><a href="#" class="nav-link" data-submenu="courses">الدورات</a></li>
+                <li><a href="#" class="nav-link" data-submenu="about">حول</a></li>
+                <li><a href="#" class="nav-link" data-submenu="contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeBtn">✕ إغلاق</button>
+        <div class="sidebar-content" id="sidebarContent">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner with Image -->
+        <section class="hero-image">
+            <img src="image/WhatsApp Image 2026-02-16 at 10.51.05 AM.jpeg" alt="Omni IT Banner" class="hero-img">
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <center>
+                <img src="image/WhatsApp_Image_2026-02-17_at_9.02.34_PM-removebg-preview.png" alt="Logo" class="welcome-logo">
+                <p class="welcome-text">"Welcome to our website! We are delighted to have you join us on our journey through the world of networking and programming. Here, we do not just provide technical services; we build smart, secure solutions tailored precisely to your needs. Our goal is to make technology an effortless and impressive tool in your hands for the success of your business."</p>
+            </center>
+        </section>
+
+        <!-- Featured Cards -->
+        <section class="cards-section">
+            <div class="card">
+                <img src="image/تنزيل-removebg-preview.png" alt="Programming" width="200px" height="150px">
+                <h3>لغات البرمجة</h3>
+                <p>تعلم أفضل لغات البرمجة الحديثة وطور مهاراتك</p>
+                <button class="btn-learn" data-submenu="languages">اتعلم الآن</button>
+            </div>
+
+            <div class="card">
+                <img src="image/net-removebg-preview.png" alt="Networking" width="200px" height="150px">
+                <h3>الشبكات</h3>
+                <p>استكشف عالم الشبكات وأساسيات الاتصالات</p>
+                <button class="btn-learn" data-submenu="networking">ابدأ الآن</button>
+            </div>
+
+            <div class="card">
+                <img src="image/تنزيل__1_-removebg-preview.png" alt="Operating Systems" width="200px" height="150px">
+                <h3>أنظمة التشغيل</h3>
+                <p>تعرف على أنظمة التشغيل الشائعة ودورها في تشغيل الأجهزة والخوادم</p>
+                 <button class="btn-learn" data-submenu="os">اتعلم الآن</button>
+                <!-- مقتصر على الصورة، العنوان والفقرة حسب المطلوب -->
+            </div>
+        </section>
+    </main>
+
+    <script src='main.js'></script>
+</body>
+</html>  

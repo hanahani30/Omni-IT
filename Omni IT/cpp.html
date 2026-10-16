@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>C++ - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>⚡ C++</h1>
+            <p>لغة برمجة قوية وسريعة للتطبيقات عالية الأداء</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن C++</h2>
+            <p>C++ هي لغة برمجة قوية وسريعة جداً، تُستخدم لتطوير الألعاب والتطبيقات عالية الأداء. تتميز بسرعة التنفيذ والتحكم الكامل بذاكرة الحاسوب.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🚀 أساسيات C++</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم المتغيرات والأنواع الأساسية</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎮 البرمجة الكائنية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">OOP والفئات والكائنات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚙️ الذاكرة والمؤشرات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إدارة الذاكرة والمؤشرات</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>المفاهيم الأساسية في C++</h2>
+            <div class="code-block">
+                <pre><code>البرنامج الأول - Hello World:
+═════════════════════════════
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "مرحباً في C++" &lt;&lt; endl;
+    return 0;
+}
+
+شرح الأسطر:
+├─ #include &lt;iostream&gt; : تضمين مكتبة الإدخال والإخراج
+├─ using namespace std : استخدام المجال المعياري
+├─ int main() { ... } : دالة البرنامج الرئيسية
+├─ cout : طباعة النص على الشاشة
+└─ return 0 : إنهاء البرنامج
+
+═════════════════════════════
+المتغيرات والأنواع:
+═════════════════════════════
+int x = 10;           // عدد صحيح
+double y = 3.14;      // عدد عشري
+char c = 'A';         // حرف واحد
+string name = "أحمد"; // نص
+bool flag = true;     // قيمة منطقية
+
+═════════════════════════════
+العمليات الحسابية:
+═════════════════════════════
+int a = 10, b = 3;
+cout &lt;&lt; "الجمع: " &lt;&lt; a + b &lt;&lt; endl;      // النتيجة: 13
+cout &lt;&lt; "الطرح: " &lt;&lt; a - b &lt;&lt; endl;      // النتيجة: 7
+cout &lt;&lt; "الضرب: " &lt;&lt; a * b &lt;&lt; endl;      // النتيجة: 30
+cout &lt;&lt; "القسمة: " &lt;&lt; a / b &lt;&lt; endl;     // النتيجة: 3
+cout &lt;&lt; "الباقي: " &lt;&lt; a % b &lt;&lt; endl;     // النتيجة: 1</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرمجة الكائنية (OOP)</h2>
+            <div class="code-block">
+                <pre><code>مثال عملي - إنشاء فئة Student:
+═════════════════════════════
+
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int age;
+    double gpa;
+
+public:
+    // دالة البناء (Constructor)
+    Student(string n, int a, double g) {
+        name = n;
+        age = a;
+        gpa = g;
+    }
+    
+    // دالة لعرض البيانات
+    void display() {
+        cout &lt;&lt; "الاسم: " &lt;&lt; name &lt;&lt; endl;
+        cout &lt;&lt; "العمر: " &lt;&lt; age &lt;&lt; endl;
+        cout &lt;&lt; "المعدل: " &lt;&lt; gpa &lt;&lt; endl;
+    }
+};
+
+int main() {
+    // إنشاء كائن
+    Student student1("أحمد", 20, 3.8);
+    student1.display();
+    
+    // إنشاء كائن آخر
+    Student student2("فاطمة", 21, 3.9);
+    student2.display();
+    
+    return 0;
+}
+
+النتيجة:
+الاسم: أحمد
+العمر: 20
+المعدل: 3.8
+الاسم: فاطمة
+العمر: 21
+المعدل: 3.9</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الحلقات والشرط</h2>
+            <div class="code-block">
+                <pre><code>حلقة for:
+═════════════════════════════
+for (int i = 1; i &lt;= 5; i++) {
+    cout &lt;&lt; i &lt;&lt; " ";
+}
+النتيجة: 1 2 3 4 5
+
+حلقة while:
+═════════════════════════════
+int count = 0;
+while (count &lt; 3) {
+    cout &lt;&lt; "مرحباً " &lt;&lt; count &lt;&lt; endl;
+    count++;
+}
+النتيجة:
+مرحباً 0
+مرحباً 1
+مرحباً 2
+
+شرط if-else:
+═════════════════════════════
+int age = 18;
+
+if (age &lt; 13) {
+    cout &lt;&lt; "أنت طفل" &lt;&lt; endl;
+} 
+else if (age &lt; 18) {
+    cout &lt;&lt; "أنت مراهق" &lt;&lt; endl;
+} 
+else {
+    cout &lt;&lt; "أنت بالغ" &lt;&lt; endl;
+}
+النتيجة: أنت بالغ</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🎮 استخدامات C++ الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. الألعاب
+   └─ محركات الألعاب: Unreal Engine
+      مثال: لعبة PUBG و Fortnite
+      ├─ الرسومات 3D
+      ├─ فيزياء اللعبة
+      └─ نظام الشبكة للاعبين المتعددين
+
+2. الرسومات المتقدمة
+   └─ برامج التصميم: Photoshop, AutoCAD
+      ├─ معالجة الصور
+      ├─ الرسومات الهندسية
+      └─ الرسومات ثلاثية الأبعاد
+
+3. أنظمة التشغيل
+   └─ Windows, Linux (جزء منه)
+      ├─ إدارة الذاكرة
+      ├─ إدارة الملفات
+      └─ اتصالات الشبكة
+
+4. التطبيقات عالية الأداء
+   └─ خوادم الويب السريعة
+      ├─ معالجة آلاف الطلبات بالثانية
+      ├─ قواعد البيانات عالية الأداء
+      └─ معالج النصوص السريع</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔀 الحلقات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">حلقات التكرار in C++</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📚 المكتبات القياسية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">استخدام مكتبات C++ المختلفة</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 الممارسة العملية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مشاريع عملية بـ C++</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

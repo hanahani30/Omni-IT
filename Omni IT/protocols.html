@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>البروتوكولات - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="networking.html" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>📡 البروتوكولات</h1>
+            <p>فهم شامل لبروتوكولات الاتصال والإنترنت الشهيرة</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>ما هي البروتوكولات؟</h2>
+            <p>البروتوكول هو مجموعة من القواعس والمعايير التي تحكم طريقة تبادل البيانات بين أجهزة الحاسوب على الشبكة. تخيل البروتوكول كلغة موحدة يتكلمها جميع الأجهزة لفهم بعضها البعض. بدون البروتوكولات، لن تستطيع الأجهزة المختلفة - حتى لو كانت من نفس الشركة - التواصل مع بعضها البعض بشكل صحيح. كل بروتوكول يحدد:</p>
+            <ul>
+                <li><strong>صيغة البيانات:</strong> كيف يجب تنسيق البيانات المرسلة</li>
+                <li><strong>المنافذ المستخدمة:</strong> والأرقام المحددة لكل خدمة</li>
+                <li><strong>طريقة الخطأ:</strong> كيفية التعامل مع الأخطاء والفقد</li>
+                <li><strong>سرعة الإرسال:</strong> ومعايير التدفق</li>
+                <li><strong>الأمان:</strong> وآليات التشفير إن وجدت</li>
+            </ul>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="lang-section">
+            <h2>📡 مجموعة بروتوكولات TCP/IP</h2>
+            <p>TCP/IP هي النموذج الأساسي والأكثر استخداماً اليوم على الإنترنت. تحتوي على مئات البروتوكولات المختلفة التي تعمل معاً في تناسق:</p>
+
+            <h3>TCP (Transmission Control Protocol) - بروتوكول التحكم بالنقل</h3>
+            <p>هو بروتوكول موثوق وآمن، موجود في الطبقة الرابعة (Transport Layer). يضمن وصول جميع البيانات بسلامة وفي الترتيب الصحيح. الآلية:</p>
+            <ul>
+                <li><strong>المقبض الثلاثي:</strong> قبل بدء الاتصال، يحدث "مصافحة" بين الطرفين</li>
+                <li><strong>الترقيم التسلسلي:</strong> كل حزمة بيانات لها رقم لضمان الترتيب</li>
+                <li><strong>التأكيد:</strong> المستقبل يرسل تأكيد استقباله للبيانات</li>
+                <li><strong>إعادة الإرسال:</strong> إذا لم يصل التأكيد، يتم إرسال البيانات مجدداً</li>
+                <li><strong>التحكم بالتدفق:</strong> المرسل يتكيف مع سرعة المستقبل</li>
+            </ul>
+            <p><strong>الاستخدامات:</strong> تحميل الملفات، البريد الإلكتروني، المتاجر الإلكترونية، التطبيقات التي تتطلب دقة كاملة</p>
+
+            <h3>UDP (User Datagram Protocol) - بروتوكول الحزم</h3>
+            <p>بروتوكول سريع جداً ولكن بدون ضمانات. لا يتحقق من وصول البيانات أو ترتيبها. يستخدم عندما تكون السرعة أهم من الدقة:</p>
+            <ul>
+                <li><strong>بدون اتصال:</strong> لا يحتاج مصافحة قبل الإرسال</li>
+                <li><strong>بدون تأكيد:</strong> لا ينتظر تأكيت الاستقبال</li>
+                <li><strong>بدون ترتيب:</strong> قد تصل الحزم بترتيب مختلف</li>
+                <li><strong>قد تفقد البيانات:</strong> الحزم المفقودة لن تعad الإرسال</li>
+                <li><strong>حمل أخف:</strong> بيانات رأسية أقل من TCP</li>
+            </ul>
+            <p><strong>الاستخدامات:</strong> البث المباشر (Live Streaming)، مكالمات الفيديو VoIP، الألعاب الأونلاين، خدمات DNS، NTP للوقت</p>
+
+            <div class="code-block">
+                <pre><code>مقارنة TCP و UDP:
+========================================
+المعيار          |  TCP           |  UDP
+الموثوقية        | 100%           | متغيرة
+التأكيد          | نعم            | لا
+الترتيب          | محفوظ          | قد يتغير  
+السرعة           | أبطأ (بتأكيد)  | أسرع جداً
+حجم الرأس        | 20 بايت        | 8 بايت فقط
+الاتصال          | متصل           | بدون اتصال
+المنفذ المثال    | 80,443,25      | 53,68,5004
+الالعاب          | غير مناسب      | الخيار المثالي</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🌐 بروتوكولات الويب (HTTP و HTTPS)</h2>
+            <p>هذه البروتوكولات مسؤولة عن عرض صفحات الويب والتواصل بين متصفح الويب وخوادم الويب:</p>
+
+            <h3>HTTP (HyperText Transfer Protocol)</h3>
+            <p>بروتوكول الويب الأساسي القديم. يرسل البيانات بشكل واضح بدون تشفير - أي أنه غير آمن تماماً!</p>
+            <ul>
+                <li><strong>المنفذ الافتراضي:</strong> 80</li>
+                <li><strong>غير آمن:</strong> البيانات مرئية لأي شخص</li>
+                <li><strong>الطلبات:</strong> GET (جلب)، POST (إرسال)، PUT (تحديث)، DELETE (حذف)</li>
+                <li><strong>رؤوس (Headers):</strong> معلومات إضافية عن الطلب والرد</li>
+                <li><strong>رموز الحالة:</strong> 200 (نجاح)، 404 (الصفحة غير موجودة)، 500 (خطأ الخادم)</li>
+            </ul>
+
+            <h3>HTTPS (HTTP Secure) - الإصدار الآمن</h3>
+            <p>نسخة آمنة من HTTP مع تشفير كامل باستخدام بروتوكول TLS/SSL. جميع البيانات مشفرة ولا يمكن قراءتها من طرف ثالث:</p>
+            <ul>
+                <li><strong>المنفذ الافتراضي:</strong> 443</li>
+                <li><strong>الحماية القصوى:</strong> كل البيانات مشفرة</li>
+                <li><strong>الشهادات الرقمية:</strong> التحقق من هوية الموقع</li>
+                <li><strong>المقفل الأخضر:</strong> علامة الأمان في المتصفح</li>
+                <li><strong>الاستخدام:</strong> البنوك، المتاجر الإلكترونية، حسابات بريد، أي موقع حساس</li>
+            </ul>
+
+            <h3>مثال عملي لديقة الطلب</h3>
+            <div class="code-block">
+                <pre><code>عندما تزيارة google.com:
+
+1. الطلب (Request):
+   GET / HTTP/1.1
+   Host: www.google.com
+   User-Agent: Mozilla/5.0 (Windows NT...)
+   Accept: text/html,application/xhtml+xml
+   Accept-Language: ar-SA,ar
+   Cookie: sessionid=abc123456
+
+2. الرد (Response):
+   HTTP/1.1 200 OK
+   Content-Type: text/html; charset=utf-8
+   Content-Length: 54321
+   Set-Cookie: sessionid=xyz789
+   Cache-Control: public, max-age=3600
+   
+   [HTML code للصفحة هنا...]
+
+3. كود الحالة المشهور:
+   200 - حسناً (الصفحة موجودة)
+   301/302 - إعادة توجيه
+   304 - لم تتغير (من الكاش)
+   400 - طلب خاطئ
+   401 - لم تصرح دخول
+   403 - مرفوض
+   404 - الصفحة غير موجودة
+   500 - خطأ الخادم</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔍 DNS و DHCP</h2>
+            <p>بروتوكولان أساسيان لتشغيل الإنترنت، احدهما يترجم الأسماء والآخر يوزع العناوين:</p>
+
+            <h3>DNS (Domain Name System) - نظام أسماء الحقول</h3>
+            <p>نظام عالمي ضخم يترجم أسماء النطاقات الجميلة (مثل google.com) إلى عناوين IP الرقمية التي تفهمها الأجهزة:</p>
+            <ul>
+                <li><strong>المنفذ:</strong> 53</li>
+                <li><strong>البروتوكول:</strong> UDP (سريع) أو TCP (موثوق)</li>
+                <li><strong>خوادم DNS:</strong> شبكة عالمية من الخوادم المتوزعة</li>
+                <li><strong>التخزين المؤقت:</strong> الاستعلامات المتكررة تحفظ محلياً</li>
+                <li><strong>أنواع السجلات:</strong>
+                    - A Records: إلى IPv4
+                    - AAAA Records: إلى IPv6
+                    - CNAME: اسم مستعار
+                    - MX: خادم البريد
+                    - TXT: نصوص
+                </li>
+            </ul>
+
+            <h3>DHCP (Dynamic Host Configuration Protocol)</h3>
+            <p>بروتوكول يوزع عناوين IP تلقائياً على الأجهزة دون الحاجة للتكوين اليدوي:</p>
+            <ul>
+                <li><strong>المنافذ:</strong> 67 (الخادم) و 68 (العميل)</li>
+                <li><strong>البروتوكول:</strong> UDP</li>
+                <li><strong>الخادم:</strong> عادة تكون التوجيه (الموجه)</li>
+                <li><strong>مدة الإيجار (Lease):</strong> كل عنوان لفترة محددة ثم يتجدد</li>
+                <li><strong>عملية DHCP الأساسية:</strong>
+                    1. DISCOVER: جهاز جديد يبحث عن خادم DHCP
+                    2. OFFER: خادم DHCP يعرض عنوان IP
+                    3. REQUEST: الجهاز يطلب العنوان
+                    4. ACK: الخادم يؤكد العنوان
+                </li>
+            </ul>
+
+            <h3>مثال واقعي: الاتصال بشبكة WiFi</h3>
+            <p>عندما تتصل بشبكة WiFi في مقهى أو مطار:</p>
+            <ol>
+                <li>جهازك يرسل طلب DHCP Discover على الشبكة</li>
+                <li>جهاز التوجيه (Wifi Router) يستقبل الطلب</li>
+                <li>التوجيه يعرض عليك عنوان IP (مثل 192.168.1.50) وعنوان DNS</li>
+                <li>جهازك يقبل العنوان باستخدام DHCP Request</li>
+                <li>الآن لديك عنوان IP وعندما تكتب google.com، يتم استخدام DNS لترجمته</li>
+                <li>جهازك يتصل بخادم DNS ويطلب عنوان IP لـ google.com</li>
+            </ol>
+        </section>
+
+        <section class="lang-section">
+            <h2>📧 بروتوكولات البريد الإلكتروني</h2>
+            <p>ثلاثة بروتوكولات رئيسية تتحكم بالبريد الإلكتروني:</p>
+
+            <h3>SMTP (Simple Mail Transfer Protocol)</h3>
+            <p>بروتوكول إرسال البريد الإلكتروني:</p>
+            <ul>
+                <li><strong>المنفذ الافتراضي:</strong> 25 (أو 587 للآمن)، 465</li>
+                <li><strong>الوظيفة:</strong> إرسال البريد من العميل إلى الخادم</li>
+                <li><strong>الخادم:</strong> smtp.gmail.com للبريد جوجل</li>
+                <li><strong>التشفير:</strong> TLS/SSL للأمان</li>
+            </ul>
+
+            <h3>POP3 (Post Office Protocol v3)</h3>
+            <p>بروتوكول استقبال البريد الأساسي:</p>
+            <ul>
+                <li><strong>المنفذ الافتراضي:</strong> 110 (أو 995 آمن)</li>
+                <li><strong>الوظيفة:</strong> تحميل البريد من الخادم إلى جهازك</li>
+                <li><strong>المشكلة:</strong> البريد يتم حكذفه من الخادم بعد التحميل</li>
+            </ul>
+
+            <h3>IMAP (Internet Message Access Protocol)</h3>
+            <p>بروتوكول استقبال البريد الحديث والأفضل:</p>
+            <ul>
+                <li><strong>المنفذ الافتراضي:</strong> 143 (أو 993 آمن)</li>
+                <li><strong>المميزات:</strong> إدارة البريد مباشرة على الخادم</li>
+                <li><strong>المزايا:</strong> الوصول من أجهزة متعددة، البريد يبقى على الخادم</li>
+            </ul>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔒 بروتوكولات الأمان</h2>
+            <p>بروتوكولات متخصصة في حماية البيانات:</p>
+
+            <h3>SSL/TLS (Secure Socket Layer / Transport Layer Security)</h3>
+            <p>البروتوكول الأساسي للتشفير على الإنترنت:</p>
+            <ul>
+                <li><strong>التطور:</strong> SSL 2.0 → SSL 3.0 → TLS 1.0 → TLS 1.2 → TLS 1.3</li>
+                <li><strong>الاستخدام:</strong> HTTPS، البريد الآمن، VPN</li>
+                <li><strong>التشفير:</strong> يشفر كل البيانات بين المتصفح والخادم</li>
+                <li><strong>الشهادات:</strong> شهادة طلب تثبت هوية الموقع</li>
+            </ul>
+
+            <h3>IPsec (IP Security)</h3>
+            <p>تشفير على مستوى الشبكة:</p>
+            <ul>
+                <li><strong>المستوى:</strong> الطبقة الثالثة (Network Layer)</li>
+                <li><strong>الاستخدام:</strong> VPN، شبكات آمنة للشركات</li>
+                <li><strong>الموثوقية:</strong> تشفير كامل لجميع البيانات</li>
+            </ul>
+
+            <div class="code-block">
+                <pre><code>العلاقة بين البروتوكولات والطبقات:
+========================================
+الطبقة 7 (التطبيق):    HTTP, HTTPS, FTP, SMTP
+الطبقة 6 (العرض):      تشفير البيانات
+الطبقة 5 (الجلسة):      إدارة الاتصال
+الطبقة 4 (النقل):      TCP, UDP
+الطبقة 3 (الشبكة):      IP, ICMP, IPsec
+الطبقة 2 (ربط البيانات): Ethernet, PPP
+الطبقة 1 (الفيزيائية):  الأسلاك والإشارات</code></pre>
+            </div>
+        </section>
+
+        <!-- Videos Section at End -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات الشرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📡 مجموعة TCP/IP</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التعامل مع TCP و UDP وقواعدهم</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌐 بروتوكولات الويب</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">HTTP و HTTPS والفرق بينهم</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔍 DNS و DHCP</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">نظام أسماء النطاقات وتوزيع العناوين</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📧 بروتوكولات البريد</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">SMTP و POP3 و IMAP مشروح</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔒 بروتوكولات الأمان</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">SSL/TLS و IPsec والتشفير</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 بروتوكولات إضافية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">FTP و NTP و ICMP وغيرها</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="networking.html" class="btn-back">← العودة إلى الشبكات</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

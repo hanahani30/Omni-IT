@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Python - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🐍 Python</h1>
+            <p>لغة برمجة قوية وسهلة التعلم</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>مقدمة عن Python</h2>
+            <p>Python هي لغة برمجة عالية المستوى وسهلة التعلم، تتميز بصيغة واضحة وسهلة القراءة. تُستخدم في مجالات متعددة مثل تحليل البيانات والذكاء الاصطناعي وتطوير الويب.</p>
+        </section>
+
+        <!-- Print Statement -->
+        <section class="lang-section">
+            <h2>أمر الطباعة (Print)</h2>
+            <p>لطباعة النصوص والنتائج على الشاشة:</p>
+            <div class="code-block">
+                <pre><code>print("مرحباً في Python!")
+print(123)
+print("النتيجة:", 5 + 3)</code></pre>
+            </div>
+            <p><strong>الناتج:</strong></p>
+            <div class="output">
+                <pre>مرحباً في Python!
+123
+النتيجة: 8</pre>
+            </div>
+        </section>
+
+        <!-- Variables -->
+        <section class="lang-section">
+            <h2>المتغيرات (Variables)</h2>
+            <p>المتغيرات تُستخدم لتخزين القيم والبيانات:</p>
+            <div class="code-block">
+                <pre><code># الأسلوب الصحيح لتسمية المتغيرات
+name = "أحمد"
+age = 25
+height = 1.75
+is_student = True
+
+# طباعة المتغيرات
+print(name)
+print(age)
+print(height)
+print(is_student)</code></pre>
+            </div>
+            <p><strong>الناتج:</strong></p>
+            <div class="output">
+                <pre>أحمد
+25
+1.75
+True</pre>
+            </div>
+        </section>
+
+        <!-- Data Types -->
+        <section class="lang-section">
+            <h2>أنواع البيانات</h2>
+            <div class="code-block">
+                <pre><code># String (نص)
+text = "Hello"
+
+# Integer (عدد صحيح)
+number = 42
+
+# Float (عدد عشري)
+decimal = 3.14
+
+# Boolean (صح أو خطأ)
+flag = True
+
+# List (قائمة)
+fruits = ["تفاح", "موز", "برتقال"]
+
+# Dictionary (قاموس)
+person = {"name": "محمد", "age": 30}</code></pre>
+            </div>
+        </section>
+
+        <!-- Operations -->
+        <section class="lang-section">
+            <h2>العمليات الحسابية</h2>
+            <div class="code-block">
+                <pre><code>a = 10
+b = 3
+
+# الجمع
+print(a + b)  # 13
+
+# الطرح
+print(a - b)  # 7
+
+# الضرب
+print(a * b)  # 30
+
+# القسمة
+print(a / b)  # 3.333...
+
+# قسمة صحيحة
+print(a // b)  # 3
+
+# الباقي
+print(a % b)  # 1
+
+# الأس
+print(a ** b)  # 1000</code></pre>
+            </div>
+        </section>
+
+        <!-- if statement -->
+        <section class="lang-section">
+            <h2>الشروط (if)</h2>
+            <div class="code-block">
+                <pre><code>age = 18
+
+if age >= 18:
+    print("أنت بالغ")
+elif age >= 13:
+    print("أنت مراهق")
+else:
+    print("أنت طفل")</code></pre>
+            </div>
+        </section>
+
+        <!-- Loops -->
+        <section class="lang-section">
+            <h2>الحلقات (Loops)</h2>
+            <h3>حلقة for:</h3>
+            <div class="code-block">
+                <pre><code>for i in range(5):
+    print(i)
+
+# النتيجة: 0, 1, 2, 3, 4
+
+# التكرار على قائمة
+fruits = ["تفاح", "موز", "برتقال"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+            </div>
+            <h3>حلقة while:</h3>
+            <div class="code-block">
+                <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+            </div>
+        </section>
+
+        <!-- Functions -->
+        <section class="lang-section">
+            <h2>الدوال (Functions)</h2>
+            <div class="code-block">
+                <pre><code># تعريف دالة
+def greet(name):
+    return f"مرحباً {name}"
+
+# استدعاء الدالة
+print(greet("أحمد"))
+
+# دالة بعدة معاملات
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)  # 8</code></pre>
+            </div>
+        </section>
+
+        <!-- Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب بنفسك</h3>
+            <p style="color: #f0f0f0; margin-bottom: 1.5rem;">اكتب كودك الخاص هنا (ملاحظة: التنفيذ يتطلب بيئة Python محلية)</p>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="pythonEditor" placeholder="# اكتب كود Python هنا
+# مثال:
+print('مرحباً في Python')
+
+name = 'أحمد'
+age = 25
+
+print('اسمي:', name)
+print('عمري:', age)
+print('النتيجة:', 5 + 3)" class="python-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="pythonOutput">اكتب الكود وانسخه لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyPythonBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearPythonBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 مقدمة عن Python</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">شرح شامل لأساسيات لغة Python والتطبيقات العملية</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💻 تثبيت البيئة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">خطوات تثبيت Python وإعداد البيئة البرمجية</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🚀 أول برنامج</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">كتابة أول برنامج Python والتعامل مع المتغيرات</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة إلى لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

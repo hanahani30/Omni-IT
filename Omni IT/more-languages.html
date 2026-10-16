@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>لغات البرمجة - معلومات إضافية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>⚡ لغات برمجة متقدمة</h1>
+            <p>معلومات عن لغات البرمجة الحديثة والقوية</p>
+        </section>
+
+        <!-- C++ -->
+        <section class="lang-section">
+            <h2>⚡ C++</h2>
+            <p><strong>الوصف:</strong> لغة برمجة سريعة جداً وقوية، تُستخدم في الألعاب والتطبيقات عالية الأداء.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "مرحباً في C++" &lt;&lt; endl;
+    return 0;
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> الألعاب، البرامج عالية الأداء، أنظمة التشغيل، الرسومات.</p>
+        </section>
+
+        <!-- C++ Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب C++ بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="cppEditor" placeholder="#include <iostream>
+using namespace std;
+
+int main() {
+    cout << \"مرحباً في C++\" << endl;
+    
+    int age = 25;
+    cout << \"العمر: \" << age << endl;
+    
+    return 0;
+}" class="cpp-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="cppOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyCppEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearCppEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- C -->
+        <section class="lang-section">
+            <h2>⚡ C</h2>
+            <p><strong>الوصف:</strong> لغة برمجة أساسية وقديمة جداً لكنها قوية جداً وتُستخدم في البرامج الحرجة.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("مرحباً في C\n");
+    return 0;
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> أنظمة التشغيل، البرامج المدمجة، البرامج الحرجة.</p>
+        </section>
+
+        <!-- C Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب C بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="cEditor" placeholder="#include <stdio.h>
+
+int main() {
+    printf(\"مرحباً في C\\n\");
+    
+    int age = 25;
+    printf(\"العمر: %d\\n\", age);
+    
+    return 0;
+}" class="c-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="cOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyCEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearCEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- PHP -->
+        <section class="lang-section">
+            <h2>🌐 PHP</h2>
+            <p><strong>الوصف:</strong> لغة برمجة متخصصة في تطوير الويب من الجانب الخادم، سهلة التعلم والاستخدام.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>&lt;?php
+    echo "مرحباً في PHP";
+    
+    $name = "أحمد";
+    echo "أهلاً " . $name;
+?&gt;</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> مواقع الويب، إدارة البيانات، معالجة النماذج.</p>
+        </section>
+
+        <!-- PHP Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب PHP بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="phpEditor" placeholder="<?php
+    $name = 'أحمد';
+    $age = 25;
+    
+    echo 'الاسم: ' . $name . '<br>';
+    echo 'العمر: ' . $age . '<br>';
+    
+    if ($age >= 18) {
+        echo 'أنت بالغ';
+    }
+?>" class="php-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="phpOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyPhpEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearPhpEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- TypeScript -->
+        <section class="lang-section">
+            <h2>🔷 TypeScript</h2>
+            <p><strong>الوصف:</strong> نسخة محسّنة من JavaScript مع نظام أنواع قوي لتطوير تطبيقات آمنة.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>function greet(name: string): string {
+    return `مرحباً ${name}`;
+}
+
+console.log(greet("محمد"));</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> تطبيقات الويب الكبيرة، Angular, React مع TypeScript.</p>
+        </section>
+
+        <!-- TypeScript Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب TypeScript بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="tsEditor" placeholder="let name: string = 'أحمد';
+let age: number = 25;
+
+function greet(person: string): string {
+    return 'مرحباً ' + person;
+}
+
+console.log(greet(name));
+console.log('العمر: ' + age);" class="ts-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="tsOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyTsEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearTsEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Go -->
+        <section class="lang-section">
+            <h2>⚙️ Go</h2>
+            <p><strong>الوصف:</strong> لغة برمجة حديثة سريعة وبسيطة، مصممة للتطبيقات الموزعة والخوادم.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>package main
+import "fmt"
+
+func main() {
+    fmt.Println("مرحباً في Go")
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> الخوادم، التطبيقات الموزعة، Kubernetes, Docker.</p>
+        </section>
+
+        <!-- Go Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب Go بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="goEditor" placeholder="package main
+import \"fmt\"
+
+func main() {
+    name := \"أحمد\"
+    age := 25
+    
+    fmt.Println(\"الاسم:\", name)
+    fmt.Println(\"العمر:\", age)
+}" class="go-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="goOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyGoEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearGoEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Rust -->
+        <section class="lang-section">
+            <h2>🦀 Rust</h2>
+            <p><strong>الوصف:</strong> لغة برمجة آمنة وسريعة جداً، تركز على الأمان وعدم وجود أخطاء.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>fn main() {
+    println!("مرحباً في Rust");
+    
+    let name = "أحمد";
+    println!("أهلاً {}", name);
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> البرامج الآمنة، أنظمة التشغيل، بناء الويب.</p>
+        </section>
+
+        <!-- Rust Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب Rust بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="rustEditor" placeholder="fn main() {
+    let name = \"أحمد\";
+    let age: i32 = 25;
+    
+    println!(\"الاسم: {}\", name);
+    println!(\"العمر: {}\", age);
+    
+    if age >= 18 {
+        println!(\"أنت بالغ\");
+    }
+}" class="rust-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="rustOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyRustEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearRustEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- C# -->
+        <section class="lang-section">
+            <h2>💜 C#</h2>
+            <p><strong>الوصف:</strong> لغة برمجة حديثة قوية لتطوير تطبيقات Windows والويب والألعاب.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("مرحباً في C#");
+    }
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> تطبيقات Windows, الويب, الألعاب عبر Unity.</p>
+        </section>
+
+        <!-- C# Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب C# بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="csEditor" placeholder="using System;
+
+class Program {
+    static void Main() {
+        string name = \"أحمد\";
+        int age = 25;
+        
+        Console.WriteLine(\"الاسم: \" + name);
+        Console.WriteLine(\"العمر: \" + age);
+        
+        if (age >= 18) {
+            Console.WriteLine(\"أنت بالغ\");
+        }
+    }
+}" class="cs-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="csOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyCsEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearCsEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Ruby -->
+        <section class="lang-section">
+            <h2>💎 Ruby</h2>
+            <p><strong>الوصف:</strong> لغة برمجة ديناميكية وممتعة، مشهورة لتطوير تطبيقات الويب بسرعة.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>puts "مرحباً في Ruby"
+
+name = "أحمد"
+puts "أهلاً #{name}"</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> مواقع الويب، Rails, سهولة التطوير السريع.</p>
+        </section>
+
+        <!-- Ruby Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب Ruby بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="rubyEditor" placeholder="name = 'أحمد'
+age = 25
+
+puts \"الاسم: #{name}\"
+puts \"العمر: #{age}\"
+
+if age >= 18
+  puts \"أنت بالغ\"
+end" class="ruby-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="rubyOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyRubyEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearRubyEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Swift -->
+        <section class="lang-section">
+            <h2>🍎 Swift</h2>
+            <p><strong>الوصف:</strong> لغة برمجة حديثة لتطوير تطبيقات Apple (iOS, macOS).</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>import Foundation
+
+let message = "مرحباً في Swift"
+print(message)
+
+let name = "أحمد"
+print("أهلاً \(name)")</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> تطبيقات iPhone, iPad, Mac.</p>
+        </section>
+
+        <!-- Swift Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب Swift بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="swiftEditor" placeholder="import Foundation
+
+let name = \"أحمد\"
+let age: Int = 25
+
+print(\"الاسم: \\(name)\")
+print(\"العمر: \\(age)\")
+
+if age >= 18 {
+    print(\"أنت بالغ\")
+}" class="swift-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="swiftOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copySwiftEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearSwiftEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Kotlin -->
+        <section class="lang-section">
+            <h2>🎯 Kotlin</h2>
+            <p><strong>الوصف:</strong> لغة برمجة حديثة توافقية مع Java، مصممة للتطبيقات المحمولة.</p>
+            <h3>مثال بسيط:</h3>
+            <div class="code-block">
+                <pre><code>fun main() {
+    println("مرحباً في Kotlin")
+    
+    val name = "أحمد"
+    println("أهلاً $name")
+}</code></pre>
+            </div>
+            <p><strong>الاستخدامات:</strong> تطبيقات Android, تطبيقات الويب عبر JVM.</p>
+        </section>
+
+        <!-- Kotlin Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب Kotlin بنفسك</h3>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="kotlinEditor" placeholder="fun main() {
+    val name = \"أحمد\"
+    val age: Int = 25
+    
+    println(\"الاسم: $name\")
+    println(\"العمر: $age\")
+    
+    if (age >= 18) {
+        println(\"أنت بالغ\")
+    }
+}" class="kotlin-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="kotlinOutput">انسخ الكود لتشغيله على جهازك</div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="copyKotlinEditorBtn">📋 انسخ الكود</button>
+                <button class="clear-btn" id="clearKotlinEditorBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة إلى لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script>
+        // C++ Editor
+        const cppEditor = document.getElementById('cppEditor');
+        const copyCppEditorBtn = document.getElementById('copyCppEditorBtn');
+        const clearCppEditorBtn = document.getElementById('clearCppEditorBtn');
+
+        if (copyCppEditorBtn) {
+            copyCppEditorBtn.addEventListener('click', () => {
+                if (cppEditor.value) {
+                    navigator.clipboard.writeText(cppEditor.value).then(() => {
+                        const originalText = copyCppEditorBtn.textContent;
+                        copyCppEditorBtn.textContent = '✓ تم النسخ!';
+                        copyCppEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyCppEditorBtn.textContent = originalText;
+                            copyCppEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearCppEditorBtn) {
+            clearCppEditorBtn.addEventListener('click', () => {
+                cppEditor.value = '';
+            });
+        }
+
+        // C Editor
+        const cEditor = document.getElementById('cEditor');
+        const copyCEditorBtn = document.getElementById('copyCEditorBtn');
+        const clearCEditorBtn = document.getElementById('clearCEditorBtn');
+
+        if (copyCEditorBtn) {
+            copyCEditorBtn.addEventListener('click', () => {
+                if (cEditor.value) {
+                    navigator.clipboard.writeText(cEditor.value).then(() => {
+                        const originalText = copyCEditorBtn.textContent;
+                        copyCEditorBtn.textContent = '✓ تم النسخ!';
+                        copyCEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyCEditorBtn.textContent = originalText;
+                            copyCEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearCEditorBtn) {
+            clearCEditorBtn.addEventListener('click', () => {
+                cEditor.value = '';
+            });
+        }
+
+        // PHP Editor
+        const phpEditor = document.getElementById('phpEditor');
+        const copyPhpEditorBtn = document.getElementById('copyPhpEditorBtn');
+        const clearPhpEditorBtn = document.getElementById('clearPhpEditorBtn');
+
+        if (copyPhpEditorBtn) {
+            copyPhpEditorBtn.addEventListener('click', () => {
+                if (phpEditor.value) {
+                    navigator.clipboard.writeText(phpEditor.value).then(() => {
+                        const originalText = copyPhpEditorBtn.textContent;
+                        copyPhpEditorBtn.textContent = '✓ تم النسخ!';
+                        copyPhpEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyPhpEditorBtn.textContent = originalText;
+                            copyPhpEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearPhpEditorBtn) {
+            clearPhpEditorBtn.addEventListener('click', () => {
+                phpEditor.value = '';
+            });
+        }
+
+        // TypeScript Editor
+        const tsEditor = document.getElementById('tsEditor');
+        const copyTsEditorBtn = document.getElementById('copyTsEditorBtn');
+        const clearTsEditorBtn = document.getElementById('clearTsEditorBtn');
+
+        if (copyTsEditorBtn) {
+            copyTsEditorBtn.addEventListener('click', () => {
+                if (tsEditor.value) {
+                    navigator.clipboard.writeText(tsEditor.value).then(() => {
+                        const originalText = copyTsEditorBtn.textContent;
+                        copyTsEditorBtn.textContent = '✓ تم النسخ!';
+                        copyTsEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyTsEditorBtn.textContent = originalText;
+                            copyTsEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearTsEditorBtn) {
+            clearTsEditorBtn.addEventListener('click', () => {
+                tsEditor.value = '';
+            });
+        }
+
+        // Go Editor
+        const goEditor = document.getElementById('goEditor');
+        const copyGoEditorBtn = document.getElementById('copyGoEditorBtn');
+        const clearGoEditorBtn = document.getElementById('clearGoEditorBtn');
+
+        if (copyGoEditorBtn) {
+            copyGoEditorBtn.addEventListener('click', () => {
+                if (goEditor.value) {
+                    navigator.clipboard.writeText(goEditor.value).then(() => {
+                        const originalText = copyGoEditorBtn.textContent;
+                        copyGoEditorBtn.textContent = '✓ تم النسخ!';
+                        copyGoEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyGoEditorBtn.textContent = originalText;
+                            copyGoEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearGoEditorBtn) {
+            clearGoEditorBtn.addEventListener('click', () => {
+                goEditor.value = '';
+            });
+        }
+
+        // Rust Editor
+        const rustEditor = document.getElementById('rustEditor');
+        const copyRustEditorBtn = document.getElementById('copyRustEditorBtn');
+        const clearRustEditorBtn = document.getElementById('clearRustEditorBtn');
+
+        if (copyRustEditorBtn) {
+            copyRustEditorBtn.addEventListener('click', () => {
+                if (rustEditor.value) {
+                    navigator.clipboard.writeText(rustEditor.value).then(() => {
+                        const originalText = copyRustEditorBtn.textContent;
+                        copyRustEditorBtn.textContent = '✓ تم النسخ!';
+                        copyRustEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyRustEditorBtn.textContent = originalText;
+                            copyRustEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearRustEditorBtn) {
+            clearRustEditorBtn.addEventListener('click', () => {
+                rustEditor.value = '';
+            });
+        }
+
+        // C# Editor
+        const csEditor = document.getElementById('csEditor');
+        const copyCsEditorBtn = document.getElementById('copyCsEditorBtn');
+        const clearCsEditorBtn = document.getElementById('clearCsEditorBtn');
+
+        if (copyCsEditorBtn) {
+            copyCsEditorBtn.addEventListener('click', () => {
+                if (csEditor.value) {
+                    navigator.clipboard.writeText(csEditor.value).then(() => {
+                        const originalText = copyCsEditorBtn.textContent;
+                        copyCsEditorBtn.textContent = '✓ تم النسخ!';
+                        copyCsEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyCsEditorBtn.textContent = originalText;
+                            copyCsEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearCsEditorBtn) {
+            clearCsEditorBtn.addEventListener('click', () => {
+                csEditor.value = '';
+            });
+        }
+
+        // Ruby Editor
+        const rubyEditor = document.getElementById('rubyEditor');
+        const copyRubyEditorBtn = document.getElementById('copyRubyEditorBtn');
+        const clearRubyEditorBtn = document.getElementById('clearRubyEditorBtn');
+
+        if (copyRubyEditorBtn) {
+            copyRubyEditorBtn.addEventListener('click', () => {
+                if (rubyEditor.value) {
+                    navigator.clipboard.writeText(rubyEditor.value).then(() => {
+                        const originalText = copyRubyEditorBtn.textContent;
+                        copyRubyEditorBtn.textContent = '✓ تم النسخ!';
+                        copyRubyEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyRubyEditorBtn.textContent = originalText;
+                            copyRubyEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearRubyEditorBtn) {
+            clearRubyEditorBtn.addEventListener('click', () => {
+                rubyEditor.value = '';
+            });
+        }
+
+        // Swift Editor
+        const swiftEditor = document.getElementById('swiftEditor');
+        const copySwiftEditorBtn = document.getElementById('copySwiftEditorBtn');
+        const clearSwiftEditorBtn = document.getElementById('clearSwiftEditorBtn');
+
+        if (copySwiftEditorBtn) {
+            copySwiftEditorBtn.addEventListener('click', () => {
+                if (swiftEditor.value) {
+                    navigator.clipboard.writeText(swiftEditor.value).then(() => {
+                        const originalText = copySwiftEditorBtn.textContent;
+                        copySwiftEditorBtn.textContent = '✓ تم النسخ!';
+                        copySwiftEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copySwiftEditorBtn.textContent = originalText;
+                            copySwiftEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearSwiftEditorBtn) {
+            clearSwiftEditorBtn.addEventListener('click', () => {
+                swiftEditor.value = '';
+            });
+        }
+
+        // Kotlin Editor
+        const kotlinEditor = document.getElementById('kotlinEditor');
+        const copyKotlinEditorBtn = document.getElementById('copyKotlinEditorBtn');
+        const clearKotlinEditorBtn = document.getElementById('clearKotlinEditorBtn');
+
+        if (copyKotlinEditorBtn) {
+            copyKotlinEditorBtn.addEventListener('click', () => {
+                if (kotlinEditor.value) {
+                    navigator.clipboard.writeText(kotlinEditor.value).then(() => {
+                        const originalText = copyKotlinEditorBtn.textContent;
+                        copyKotlinEditorBtn.textContent = '✓ تم النسخ!';
+                        copyKotlinEditorBtn.style.backgroundColor = '#27ae60';
+                        setTimeout(() => {
+                            copyKotlinEditorBtn.textContent = originalText;
+                            copyKotlinEditorBtn.style.backgroundColor = '';
+                        }, 2000);
+                    });
+                }
+            });
+        }
+
+        if (clearKotlinEditorBtn) {
+            clearKotlinEditorBtn.addEventListener('click', () => {
+                kotlinEditor.value = '';
+            });
+        }
+    </script>
+</body>
+</html>

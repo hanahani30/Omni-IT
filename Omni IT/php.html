@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PHP - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🐘 PHP</h1>
+            <p>لغة برمجة الويب الديناميكية</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن PHP</h2>
+            <p>PHP (PHP: Hypertext Preprocessor) هي لغة برمجة متخصصة في تطوير تطبيقات الويب الديناميكية. تعمل على جانب الخادم وتتفاعل مع قواعد البيانات لإنشاء صفحات ويب تفاعلية.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌐 أساسيات PHP</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم أساسيات البرمجة بـ PHP</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 قواعد البيانات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الاتصال بقواعد البيانات MySQL</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔐 الأمان</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">حماية تطبيقات الويب</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرنامج الأول - Hello World</h2>
+            <div class="code-block">
+                <pre><code>&lt;?php
+    echo "مرحباً في PHP!";
+?&gt;
+
+النتيجة على الصفحة:
+مرحباً في PHP!
+
+شرح الكود:
+├─ &lt;?php و ?&gt; : بداية ونهاية كود PHP
+└─ echo : طباعة النص على الصفحة</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>المتغيرات والأنواع</h2>
+            <div class="code-block">
+                <pre><code>&lt;?php
+    // المتغيرات تبدأ بـ $
+    $name = "أحمد";
+    $age = 25;
+    $height = 1.75;
+    $is_student = true;
+    
+    echo "الاسم: " . $name . "&lt;br&gt;";
+    echo "العمر: " . $age . "&lt;br&gt;";
+    echo "الطول: " . $height . " متر&lt;br&gt;";
+    echo "هل هو طالب: " . ($is_student ? "نعم" : "لا") . "&lt;br&gt;";
+?&gt;
+
+النتيجة:
+الاسم: أحمد
+العمر: 25
+الطول: 1.75 متر
+هل هو طالب: نعم</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الدوال والعمليات</h2>
+            <div class="code-block">
+                <pre><code>&lt;?php
+    // دالة لحساب المجموع
+    function sum($a, $b) {
+        return $a + $b;
+    }
+    
+    $result = sum(10, 20);
+    echo "مجموع 10 و 20 = " . $result . "&lt;br&gt;";
+    
+    // مثال بـ array (مصفوفة)
+    $students = array("أحمد", "فاطمة", "علي");
+    
+    echo "عدد الطلاب: " . count($students) . "&lt;br&gt;";
+    
+    // حلقة for
+    for ($i = 0; $i &lt; count($students); $i++) {
+        echo "الطالب " . ($i + 1) . ": " . $students[$i] . "&lt;br&gt;";
+    }
+?&gt;
+
+النتيجة:
+مجموع 10 و 20 = 30
+عدد الطلاب: 3
+الطالب 1: أحمد
+الطالب 2: فاطمة
+الطالب 3: علي</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الاتصال بقاعدة البيانات</h2>
+            <div class="code-block">
+                <pre><code>&lt;?php
+    // الاتصال بقاعدة البيانات MySQL
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "school";
+    
+    // إنشاء الاتصال
+    $conn = new mysqli($servername, $username, $password, $database);
+    
+    // التحقق من الاتصال
+    if ($conn->connect_error) {
+        die("خطأ في الاتصال: " . $conn->connect_error);
+    }
+    
+    echo "تم الاتصال بنجاح!&lt;br&gt;";
+    
+    // استعلام بسيط
+    $sql = "SELECT * FROM students";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "الاسم: " . $row["name"] . " - العمر: " . $row["age"] . "&lt;br&gt;";
+        }
+    }
+    
+    $conn->close();
+?&gt;</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🌐 استخدامات PHP الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. المتاجر الإلكترونية
+   └─ مثال: متجر الإلكترونيات
+      ├─ عرض المنتجات من قاعدة البيانات
+      ├─ عربة التسوق
+      ├─ معالجة الدفع
+      └─ قائمة الطلبات
+
+2. إنظمة إدارة المحتوى
+   └─ مثال: WordPress
+      ├─ إضافة ومعالجة المقالات
+      ├─ التعليقات
+      ├─ الوسوم والفئات
+      └─ حقوق المستخدمين
+
+3. مواقع التواصل الاجتماعي
+   └─ مثال: Facebook (في الأصل مبني بـ PHP)
+      ├─ حفظ بيانات المستخدمين
+      ├─ المنشورات والتعليقات
+      ├─ نظام الإشعارات
+      └─ نظام الأصدقاء
+
+4. لوحات التحكم الإدارية
+   └─ مثال: لوحة تحكم المدرسة
+      ├─ إدارة الطلاب
+      ├─ إدارة المعلمين
+      ├─ نظام العلامات
+      └─ التقارير المختلفة</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 الحلقات والشروط</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التحكم بسير البرنامج</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📝 معالجة النماذج</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">GET و POST في PHP</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 الممارسة العملية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مشاريع حقيقية بـ PHP</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

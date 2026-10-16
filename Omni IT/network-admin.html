@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>إدارة الشبكات - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="networking.html" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>⚙️ إدارة الشبكات</h1>
+            <p>تثبيت وصيانة وإدارة الشبكات الحديثة</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن إدارة الشبكات</h2>
+            <p>مسؤول الشبكة مسؤول عن تثبيت وتكوين وصيانة وأمان الشبكات. يجب أن يكون لديه معرفة عميقة بأجهزة الشبكة والبرامج والبروتوكولات.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مهام مسؤول الشبكة مع أمثلة عملية</h2>
+            <div class="code-block">
+                <pre><code>1. التثبيت والتكوين الأولي
+   └─ أمثلة واقعية:
+      • تثبيت جهاز موجه جديد (Router)
+        - توصيل الأسلاك
+        - إعدادات IP (مثال: 192.168.1.1)
+        - إنشاء شبكة WiFi وكلمة مرور قوية
+      
+      • تكوين المحول (Switch)
+        - تعيين عناوين VLAN
+        - إعدادات الأمان (802.1X)
+      
+      • إضافة خادم جديد للشبكة
+        - تثبيت نظام التشغيل (Windows Server/Linux)
+        - تثبيت DHCP و DNS
+        - ربط معلومات المستخدمين (Active Directory)
+
+2. المراقبة والصيانة اليومية
+   └─ أمثلة واقعية:
+      • فحص صحة الشبكة
+        - سرعة الإنترنت: فحص أن تكون 100 Mbps
+        - استخدام النطاق الترددي
+        - الأجهزة المتصلة بالشبكة
+      
+      • المراقبة اليومية
+        - استخدام أدوات: Nagios, Zabbix
+        - إنشاء تقارير عن الأداء
+        - فحص استهلاك الخوادم
+      
+      • النسخ الاحتياطية
+        - نسخ احتياطية يومية من البيانات
+        - حفظ في موقع آمن (خادم احتياطي)
+        - اختبار استعادة البيانات شهرياً
+
+3. حل المشاكل والصيانة الوقائية
+   └─ أمثلة واقعية:
+      • الاتصال لا يعمل
+        - فحص الكابل (Ethernet)
+        - إعادة تشغيل جهاز الموجه
+        - فحص عنوان IP
+        مثال: ping 192.168.1.1
+      
+      • الإنترنت بطيء جداً
+        - فحص استخدام النطاق الترددي
+        - البحث عن البرامج التي تستهلك الإنترنت
+        - عزل الجهاز المصاب
+      
+      • أجهزة لا تجد الشبكة
+        - فحص خادم DHCP
+        - فحص تكوين الجهاز
+        - إعادة تشغيل بطاقة الشبكة
+
+4. إدارة المستخدمين والصلاحيات
+   └─ أمثلة واقعية:
+      • إضافة مستخدم جديد
+        - إنشاء حساب على الخادم (AD)
+        - تعيين الأجهزة المسموح له بالوصول
+        - تحديد كلمة مرور قوية (ملزمة في كل 90 يوم)
+      
+      • إزالة موظف قديم
+        - حذف الحساب من النظام
+        - استرجاع الأجهزة المحمولة
+        - نقل البيانات إلى موظف جديد
+      
+      • إدارة الصلاحيات
+        - موظف التسويق: وصول لمشاركة المبيعات فقط
+        - موظف تقني: وصول كامل للخوادم
+        - مدير: وصول لجميع الموارد
+
+5. الأمان والحماية
+   └─ أمثلة واقعية:
+      • جدار الحماية (Firewall)
+        - السماح بـ HTTP/HTTPS من الخارج
+        - حجب جميع المنافذ الأخرى
+      
+      • مكافحة الفيروسات
+        - تثبيت على جميع الأجهزة
+        - تحديث يومي للتعريفات
+        - فحص شامل أسبوعي
+      
+      • VPN للموظفين البعيدين
+        - الوصول الآمن للشبكة من المنزل
+        - تشفير كامل للبيانات
+        - مثال: مستخدم يعمل من البيت يتصل عبر VPN</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>أدوات مهمة لمسؤول الشبكة</h2>
+            <div class="code-block">
+                <pre><code>1. أدوات التشخيص والاختبار
+   ├─ ping: فحص الاتصال بجهاز آخر
+   │  مثال: ping 8.8.8.8
+   │
+   ├─ ipconfig (Windows) / ifconfig (Linux)
+   │  عرض معلومات الشبكة
+   │
+   ├─ tracert: تتبع المسار إلى الخادم
+   │  مثال: tracert google.com
+   │
+   └─ netstat: عرض الاتصالات النشطة
+
+2. أدوات إدارة الشبكات
+   ├─ Cisco IOS: لإدارة أجهزة Cisco
+   ├─ Windows Server: لإدارة الخوادم
+   └─ Linux (Ubuntu/CentOS): لخوادم مفتوحة المصدر
+
+3. أدوات المراقبة
+   ├─ Nagios: مراقبة شاملة لأداء الشبكة
+   ├─ Zabbix: تجميع ومراقبة البيانات
+   ├─ Wireshark: تحليل حركة البيانات
+   └─ PRTG: مراقبة النطاق الترددي
+
+4. النسخ الاحتياطي
+   ├─ Backup software: Veeam, Acronis
+   └─ Cloud backup: Google Drive, OneDrive</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 إدارة السعة والتخزين</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إدارة مساحة التخزين والخوادم</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">👤 إدارة المستخدمين</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إدارة الحسابات والصلاحيات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📈 التقارير والإحصائيات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إعداد التقارير والإحصائيات</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="networking.html" class="btn-back">← العودة إلى الشبكات</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

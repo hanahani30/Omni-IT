@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>أساسيات الشبكات - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="networking.html" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🌐 أساسيات الشبكات</h1>
+            <p>فهم المفاهيم الأساسية والبنية التحتية للشبكات بشكل شامل وتفصيلي</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>مقدمة عن الشبكات</h2>
+            <p>الشبكات الحاسوبية هي مجموعة من أجهزة الحاسوب والمعدات المتصلة ببعضها البعض لتبادل البيانات والموارد. وتعتبر الشبكات أساس الاتصالات الحديثة والإنترنت. في هذا العصر الرقمي، لا يمكن تخيل حياتنا بدون الشبكات - سواء كان ذلك في المنازل، المدارس، المكاتب، أو الشركات الكبرى. فالشبكي توفر لنا امكانية التواصل الفوري، نقل الملفات بسرعة، المشاركة في الموارد، والوصول إلى الإنترنت العالمي.</p>
+            <p>عندما تفتح متصفح الويب وتذهب إلى موقع معين، أو تراسل صديقك عبر البريد الإلكتروني، أو تشاهد فيديو على الإنترنت - كل هذا يعتمد على شبكات معقدة من الأجهزة والبروتوكولات التي تعمل معاً بتناغم. فهم أساسيات هذه الشبكات يساعدك على فهم كيفية عمل التكنولوجيا من حولك واتخاذ قرارات أفضل حول الأمان والأداء.</p>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="lang-section">
+            <h2>📊 نموذج OSI - الطبقات السبع</h2>
+            <p>نموذج OSI (Open Systems Interconnection) هو نموذج معياري يصف كيفية تواصل أنظمة الشبكة المختلفة مع بعضها البعض. يتكون من 7 طبقات، كل منها لها مسؤولياتها الخاصة وتتفاعل مع الطبقات الأخرى بطريقة منظمة.</p>
+            
+            <h3>الطبقة الأولى: Physical Layer (الطبقة الفيزيائية)</h3>
+            <p>هي أدنى طبقة في النموذج وتتعامل مع الأشياء الملموسة - الكابلات، الأسلاك، الموصلات الكهربائية، والإشارات الكهرومغناطيسية. في هذه الطبقة يتم تحويل البيانات إلى إشارات كهربائية يمكن نقلها عبر الكابلات المختلفة مثل Ethernet أو الألياف البصرية. مثال: عندما تشاهد ضوء غير مستقر على جهاز الموجه - هذا يعني نقل بيانات في الطبقة الفيزيائية.</p>
+
+            <h3>الطبقة الثانية: Data Link Layer (طبقة ربط البيانات)</h3>
+            <p>هذه الطبقة تعتني بالاتصال بين جهازين في الشبكة ذاتها (LAN). تستخدم عناوين MAC (Media Access Control) لتحديد الأجهزة على الشبكة المحلية. كل جهاز قطعة من أجهزة الشبكة لها عنوان MAC فريد مثل: 00:1A:2B:3C:4D:5E. هذه الطبقة توفر نقل خالي من الأخطاء بين الأجهزة المتجاورة وتعالج مشاكل الأسلاك التالفة من خلال فحص الأخطاء.</p>
+
+            <h3>الطبقة الثالثة: Network Layer (طبقة الشبكة)</h3>
+            <p>هذه الطبقة وظيفتها الأساسية هي التوجيه (Routing) - أي تحديد المسار الأفضل لنقل البيانات من جهاز مصدر إلى جهاز وجهة قد يكونان على شبكات مختلفة. تستخدم عناوين IP (IPv4 أو IPv6) لتعريف الأجهزة على الإنترنت. على سبيل المثال: عندما ترسل بريد إلكتروني لصديقك في دول أخرى، هذه الطبقة تتكفل بتحديد المسار الأمثل للوصول إليه عبر عدة شبكات وموجهات.</p>
+
+            <h3>الطبقة الرابعة: Transport Layer (طبقة النقل)</h3>
+            <p>تتعامل هذه الطبقة مع البروتوكولات الشهيرة TCP (Transmission Control Protocol) و UDP (User Datagram Protocol). TCP توفر نقل موثوق حيث تتأكد من وصول جميع البيانات بالترتيب الصحيح، بينما UDP هي أسرع ولكن بدون ضمانات. مثال: عندما تحمل ملف من الإنترنت، يتم استخدام TCP للتأكد من عدم فقدان أي بيانات من الملف. أما عند مشاهدة فيديو حي (Live Streaming)، يتم استخدام UDP لأن السرعة أهم من الموثوقية المطلقة.</p>
+
+            <h3>الطبقة الخامسة: Session Layer (طبقة الجلسة)</h3>
+            <p>تدير هذه الطبقة جلسات الاتصال بين الأجهزة. فتح الاتصال، الحفاظ عليه، وإغلاقه بشكل صحيح مسؤولية هذه الطبقة. مثال: عندما تسجل الدخول إلى حسابك في موقع البريد الإلكتروني، هذه الطبقة تدير جلستك (Session) معهم، تذكرك كمستخدم مسجل دخول، وعندما تغلق الموقع أو تنجد الجلسة تنتهي الجلسة.</p>
+
+            <h3>الطبقة السادسة: Presentation Layer (طبقة العرض)</h3>
+            <p>تعالج هذه الطبقة صيغة البيانات - التشفير، الضغط، والترجمة. مثلاً تحويل نصوص من صيغة UTF-8 إلى ASCII، أو ضغط الصور قبل الإرسال، أو فك تشفير البيانات المشفرة. تضمن أن البيانات المرسلة والمستقبلة بصيغة يفهمها كلا الجانبين.</p>
+
+            <h3>الطبقة السابعة: Application Layer (طبقة التطبيق)</h3>
+            <p>هذه أعلى طبقة وأقرب للمستخدم النهائي. تحتوي على البروتوكولات والبرامج التي نستخدمها يومياً: HTTP للويب، SMTP للبريد الإلكتروني، FTP لنقل الملفات، DNS لترجمة الأسماء إلى عناوين IP. عندما تفتح متصفح كروم وتزيارة google.com، أنت تستخدم الطبقة السابعة.</p>
+
+            <div class="code-block">
+                <pre><code>مثال عملي - إرسال بريد إلكتروني:
+========================================
+الطبقة 7: البريد الإلكتروني (Gmail, Outlook)
+الطبقة 6: تشفير كلمة المرور والبيانات
+الطبقة 5: إنشاء جلسة نقل البيانات
+الطبقة 4: استخدام SMTP بروتوكول TCP
+الطبقة 3: توجيه البريد إلى خادم البريد
+الطبقة 2: معالجة عناوين MAC المحلية
+الطبقة 1: نقل الإشارات عبر كابل الإنترنت</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔗 أنواع الشبكات</h2>
+            <p>يتم تصنيف الشبكات حسب نطاقها الجغرافي والحجم. كل نوع له خصائصه ومميزاته واستخداماته الخاصة:</p>
+
+            <h3>شبكة محلية LAN (Local Area Network)</h3>
+            <p>تغطي مساحة صغيرة محدودة جداً - مثل منزل واحد، عمارة، مدرسة، أو مكتب صغير. الحد الأقصى للمسافة عادة لا يتجاوز بضعة كيلومترات. المميزات:</p>
+            <ul>
+                <li><strong>سرعة عالية جداً:</strong> 100 Mbps إلى 1 Gbps أو أكثر</li>
+                <li><strong>تكاليف منخفضة:</strong> لا تحتاج إلى موردي خدمات خارجيين</li>
+                <li><strong>أمان أفضل:</strong> تحت سيطرة المؤسسة نفسها</li>
+                <li><strong>تأخير منخفض:</strong> زمن التأخير قليل جداً</li>
+                <li><strong>استخدام عناوين IP خاصة:</strong> مثل 192.168.x.x أو 10.x.x.x</li>
+            </ul>
+            <p><strong>مثال واقعي:</strong> شبكة المدرسة - جميع الحاسوبات في المختبرات والفصول والمكاتب متصلة معاً. المعلم من مكتبه يمكنه مراقبة شاشات الطلاب في الفصل.</p>
+
+            <h3>شبكة واسعة WAN (Wide Area Network)</h3>
+            <p>تمتد على مناطق جغرافية واسعة جداً - دول، قارات، أو الإنترنت كاملاً. تستخدم الموجات الكهرومغناطيسية والأقمار الصناعية. المميزات:</p>
+            <ul>
+                <li><strong>تغطية واسعة جداً:</strong> بدون حدود جغرافية</li>
+                <li><strong>سرعة أقل:</strong> 1 Mbps إلى 100 Mbps عادة</li>
+                <li><strong>تأخير أعلى:</strong> قد يكون هناك تأخير ملحوظ</li>
+                <li><strong>تكاليف أعلى:</strong> تحتاج إلى مزودي خدمات ومحطات عاد</li>
+                <li><strong>أقل أماناً:</strong> أكثر عرضة للهجمات السيبرانية</li>
+            </ul>
+            <p><strong>مثال واقعي:</strong> فروع شركة كبرى في دول مختلفة - الفرع بالسعودية يتواصل مع الفرع بمصر والإمارات وإيطاليا. كل فرع له شبكة LAN خاصة به، لكنهم جميعاً متصلين عبر WAN.</p>
+
+            <h3>شبكة متوسطة MAN (Metropolitan Area Network)</h3>
+            <p>تغطي المدينة الواحدة أو محافظة بأكملها. أكبر من LAN لكن أصغر من WAN. تستخدم في الجامعات الكبيرة، المدن الذكية، والهيئات الحكومية واسعة الخدمات.</p>
+            <p><strong>مثال واقعي:</strong> جامعة كبيرة لديها عدة حرم جامعي في مختلف مناطق المدينة، كل حرم له شبكة LAN، لكن الحرم كلها متصلة معاً عبر MAN.</p>
+
+            <h3>الإنترنت (Internet)</h3>
+            <p>أكبر WAN في العالم - شبكة عالمية تربط ملايين الشبكات الحكومية والجامعية والتجارية والشخصية. تعتمد على بروتوكول TCP/IP الموحد. بدأت من مشروع عسكري أمريكي في الستينات (ARPANET) وأصبحت الآن أساس الحضارة الحديثة.</p>
+
+            <div class="code-block">
+                <pre><code>مقارنة بين أنواع الشبكات:
+========================================
+المميزة        |  LAN      |  MAN      |  WAN
+السرعة         | عالية جداً| متوسطة    | منخفضة
+النطاق         | 1 كم      | 10 كم     | بلا حدود
+التأخير        | قليل جداً | متوسط     | عالي
+التكلفة        | منخفضة    | متوسطة    | عالية
+الأمان         | جيد جداً  | متوسط     | معرض
+الموثوقية      | عالية     | متوسطة    | يعتمد على ISP
+الملكية        | منظمة واحد| منظمات    | عام/تجاري
+الأمثلة        | مكتب/مدرس | جامعة    | الإنترنت/VPN</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>💾 عناوين IP والتقسيم الشبكي</h2>
+            <p>عنوان IP هو العنوان الفريد لكل جهاز على الإنترنت - مثل رقم هاتفك أو عنوان منزلك. بدونه لا يمكن للأجهزة أن تتواصل.</p>
+
+            <h3>IPv4 - الإصدار الرابع</h3>
+            <p>هو الأكثر استخداماً حالياً. يتكون من 4 أرقام (Octets) مفصولة بنقاط: 192.168.1.100</p>
+            <ul>
+                <li><strong>الحد الأدنى:</strong> 0.0.0.0</li>
+                <li><strong>الحد الأقصى:</strong> 255.255.255.255</li>
+                <li><strong>إجمالي العناوين:</strong> 4.3 مليار عنوان تقريباً</li>
+                <li><strong>حجم البيانات:</strong> 32 بت</li>
+            </ul>
+
+            <h3>IPv6 - الإصدار السادس</h3>
+            <p>أحدث إصدار وتم إنشاؤه لأن IPv4 أصبحت غير كافية بسبب عدد الأجهزة الضخم. الشكل: 2001:0db8:85a3::8a2e:0370:7334</p>
+            <ul>
+                <li><strong>عدد العناوين:</strong> 340 كوينديليون (340 تريليون تريليون!)</li>
+                <li><strong>حجم البيانات:</strong> 128 بت</li>
+                <li><strong>أمان أفضل:</strong> IPSEC مدمج</li>
+                <li><strong>أداء أفضل:</strong> بدون الحاجة لـ NAT</li>
+            </ul>
+
+            <h3>أنواع عناوين IP</h3>
+            <div class="code-block">
+                <pre><code>1. عناوين عامة (Public IP)
+   - للإنترنت العام
+   - فريدة عالمياً
+   - مثال: 8.8.8.8 (DNS جوجل)
+
+2. عناوين خاصة (Private IP) - مشفوعة
+   النطاق الأول:   10.0.0.0 إلى 10.255.255.255
+   النطاق الثاني:  172.16.0.0 إلى 172.31.255.255
+   النطاق الثالث:  192.168.0.0 إلى 192.168.255.255
+   
+   - للاستخدام الداخلي فقط
+   - لا تعمل على الإنترنت مباشرة
+   - يجب استخدام NAT للاتصال بالإنترنت
+
+3. عناوين محجوزة خاصة
+   127.0.0.1         - الحاسوب نفسه (Localhost)
+   255.255.255.255    - بث عام (Broadcast)
+   169.254.x.x        - اتصال محلي رابط</code></pre>
+            </div>
+
+            <h3>قناع الشبكة (Subnet Mask)</h3>
+            <p>يحدد أي جزء من عنوان IP يمثل الشبكة وأي جزء يمثل الجهاز. الشكل مشابه للـ IP: 255.255.255.0</p>
+            <p><strong>مثال:</strong> الجهاز 192.168.1.100 مع قناع 255.255.255.0 يعني أن الشبكة هي 192.168.1.0 والجهاز رقم 100 في هذه الشبكة.</p>
+
+            <h3>البوابة الافتراضية (Default Gateway)</h3>
+            <p>جهاز (عادة الموجه) يوصل شبكتك المحلية بالعالم الخارجي. عندما تريد إرسال بيانات لجهاز خارج شبكتك، يجب أن تمر عبر البوابة الافتراضية.</p>
+            <p><strong>مثال:</strong> في منزلك، البوابة الافتراضية عادة ما تكون 192.168.1.1 وهي عنوان الموجه الذي توصل إنترنت الشركة.</p>
+
+            <div class="code-block">
+                <pre><code>مثال عملي على التقسيم الشبكي:
+========================================
+عنوان IP         192.168.1.100
+قناع الشبكة      255.255.255.0
+أول عنوان (شبكة) 192.168.1.0
+آخر عنوان (بث)   192.168.1.255
+عدد الأجهزة      254 (100-254)
+
+الحسابات:
+- البت 0 في القناع = بت الجهاز
+- البت 1 في القناع = بت الشبكة
+النتيجة: الأول 3 بايتات = شبكة، البايت الأخير = جهاز</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔄 بروتوكولات النقل - TCP و UDP</h2>
+            <p>تعمل هذه البروتوكولات في الطبقة الرابعة (Transport Layer) وهي أساس الاتصالات على الإنترنت.</p>
+
+            <h3>TCP (Transmission Control Protocol)</h3>
+            <p>بروتوكول موثوق يضمن وصول جميع البيانات بالترتيب الصحيح. يشبه إرسال رسالة مسجلة تحتاج توقيع المستقبل.</p>
+            <ul>
+                <li><strong>موثوقية عالية:</strong> تأكد من وصول كل البيانات</li>
+                <li><strong>ترتيب محفوظ:</strong> البيانات تصل بنفس الترتيب المرسل</li>
+                <li><strong>تحكم بالتدفق:</strong> المرسل يتأقلم مع سرعة المستقبل</li>
+                <li><strong>اكتشاف الأخطاء:</strong> معالجة الأخطاء والإعادة</li>
+                <li><strong>أبطأ:</strong> كل هذه الضمانات تعني تأخير أكبر</li>
+            </ul>
+            <p><strong>الاستخدامات:</strong> تحميل الملفات (FTP)، البريد الإلكتروني (SMTP/POP3)، الويب (HTTP)، الواتس والتطبيقات الفورية</p>
+
+            <h3>UDP (User Datagram Protocol)</h3>
+            <p>بروتوكول سريع لكن بدون ضمانات. يشبه إرسال بريد عادي بدون معرفة إذا وصل أم لا.</p>
+            <ul>
+                <li><strong>سرعة عالية:</strong> بدون تأكيدات إضافية</li>
+                <li><strong>تأخير منخفض:</strong> مناسب للوقت الفعلي</li>
+                <li><strong>استهلاك بيانات منخفض:</strong> أقل overhead</li>
+                <li><strong>بدون ترتيب مضمون:</strong> قد تصل الحزم بترتيب مختلف</li>
+                <li><strong>قد تفقد البيانات:</strong> لا يعيد الحزم الضائعة</li>
+            </ul>
+            <p><strong>الاستخدامات:</strong> البث المباشر (Live Streaming)، مكالمات الفيديو VoIP، الألعاب الأونلاين، DNS، NTP</p>
+
+            <div class="code-block">
+                <pre><code>مقارنة بين TCP و UDP:
+========================================
+المميزة          |  TCP            |  UDP
+الموثوقية        | عالية جداً      | منخفضة
+التأكيد          | نعم             | لا
+الترتيب          | محفوظ           | قد يتغير
+السرعة           | أبطأ            | أسرع
+التأخير          | بتأخير          | بسرعة
+الاستخدام       | الملفات/الويب    | الفيديو/اللعب
+الموثوقية        | 100%            | 90-99%
+الحجم            | أكبر            | أصغر</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🌍 كيفية عمل الإنترنت - مثال عملي شامل</h2>
+            <p>لنتتبع رحلة طلب واحد - كتابة عنوان موقع في المتصفح حتى رؤية الصفحة:</p>
+            
+            <h3>الخطوة 1: كتابة العنوان (www.google.com)</h3>
+            <p>تكتب العنوان وتضغط Enter. نعم، هذا اسم جميل، لكن الحاسوبات لا تفهم الأسماء - تحتاج عنوان IP رقمي!</p>
+
+            <h3>الخطوة 2: استعلام DNS (Domain Name System)</h3>
+            <p>المتصفح يرسل استعلام DNS: "ما عنوان IP لـ google.com؟" ينطلق هذا الاستعلام لخادم DNS (عادة 8.8.8.8 جوجل أو 1.1.1.1 Cloudflare). خادم DNS يبحث في جداوله الضخمة ويرد: "عنوان IP هو 142.251.33.14"</p>
+
+            <h3>الخطوة 3: إنشاء اتصال TCP</h3>
+            <p>المتصفح يعرف الآن العنوان. ينطلق اتصال TCP بين جهازك وخوادم جوجل - يسمى this "Three-Way Handshake":</p>
+            <ul>
+                <li>جهاز المستخدم يرسل: "مرحباً، هل أنت مستعد؟"</li>
+                <li>خادم جوجل يرد: "نعم، أنا مستعد"</li>
+                <li>جهاز المستخدم يؤكد: "حسناً، ابدأ الاتصال"</li>
+            </ul>
+            <p>الآن الاتصال آمن وموثوق بين الطرفين.</p>
+
+            <h3>الخطوة 4: إرسال طلب HTTP</h3>
+            <p>المتصفح يرسل طلب HTTP:</p>
+            <div class="code-block">
+                <pre><code>GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0...
+Accept: text/html,application/xhtml+xml...
+Connection: keep-alive</code></pre>
+            </div>
+
+            <h3>الخطوة 5: خادم جوجل يعالج الطلب</h3>
+            <p>خادم جوجل يستقبل الطلب، يتحقق من الطلب وإذا كل شيء صحيح يبحث عن الصفحة الرئيسية ويرسل الرد:</p>
+            <div class="code-block">
+                <pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 15234
+... وبعدها كود HTML الصفحة ...</code></pre>
+            </div>
+
+            <h3>الخطوة 6: تحميل الموارد الإضافية</h3>
+            <p>الصفحة قد تحتوي على صور، ملفات CSS، جافاسكريبت. المتصفح يرسل طلبات منفصلة لكل مورد. كل طلب يتبع نفس العملية أعلاه.</p>
+
+            <h3>الخطوة 7: معالجة وعرض الصفحة</h3>
+            <p>المتصفح يستقبل كود HTML، يقرأه، يطبق أنماط CSS، يشغل جافاسكريبت، ثم يعرض الصفحة النهائية على الشاشة.</p>
+
+            <h3>الخطوة 8: إغلاق الاتصال</h3>
+            <p>عندما تغلق الصفحة أو تنتقل لصفحة أخرى، يتم إغلاق اتصال TCP بشكل آمن.</p>
+
+            <p><strong>المدة الزمنية:</strong> كل هذا يحدث خلال ملي ثواني - لهذا السبب ترى الصفحة بسرعة!</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔌 بروتوكولات التطبيق الشهيرة</h2>
+            <p>كل خدمة انترنت تستخدم بروتوكول خاص بها في الطبقة 7 (التطبيق):</p>
+
+            <h3>HTTP و HTTPS</h3>
+            <p><strong>HTTP (HyperText Transfer Protocol):</strong> بروتوكول غير آمن لنقل صفحات الويب. يستخدم المنفذ 80.</p>
+            <p><strong>HTTPS:</strong> نسخة آمنة من HTTP مع تشفير SSL/TLS. يستخدم المنفذ 443. كل موقع حديث يجب أن يستخدم HTTPS لحماية بيانات المستخدمين.</p>
+
+            <h3>SMTP و POP3</h3>
+            <p><strong>SMTP:</strong> يستخدم لإرسال البريد الإلكتروني (المنفذ 25).</p>
+            <p><strong>POP3:</strong> يستخدم لاستقبال البريد الإلكتروني (المنفذ 110).</p>
+
+            <h3>FTP</h3>
+            <p><strong>FTP (File Transfer Protocol):</strong> لنقل الملفات بين الأجهزة (المنفذ 21). أقل أماناً من SFTP الذي يستخدم التشفير.</p>
+
+            <h3>DNS</h3>
+            <p><strong>DNS (Domain Name System):</strong> ترجمة أسماء الحقول (www.google.com) إلى عناوين IP (المنفذ 53). بدون DNS كيفية تتذكر ملايين عناوين IP؟</p>
+            <p>خوادم DNS الشهيرة:</p>
+            <ul>
+                <li><strong>جوجل:</strong> 8.8.8.8 و 8.8.4.4</li>
+                <li><strong>Cloudflare:</strong> 1.1.1.1 و 1.0.0.1</li>
+                <li><strong>OpenDNS:</strong> 208.67.222.222 و 208.67.220.220</li>
+            </ul>
+
+            <h3>DHCP</h3>
+            <p><strong>DHCP (Dynamic Host Configuration Protocol):</strong> بروتوكول توزيع عناوين IP تلقائياً (المنفذ 67/68). عندما تتصل بشبكة WiFi جديدة، الموجه يستخدم DHCP لإعطاؤك عنوان IP تلقائياً بدل إدخاله يدوياً.</p>
+
+            <div class="code-block">
+                <pre><code>مثال على عملية DHCP:
+========================================
+1. جهاز جديد على الشبكة: "من هناك؟"
+2. خادم DHCP يرد: "أعطيك 192.168.1.105"
+3. الجهاز: "شكراً، استخدمت هذا العنوان"
+4. خادم DHCP: "يمكنك استخدام هذا لـ 24 ساعة"
+
+الجهاز يستخدم العنوان لحين انتهاء المدة، ثم يطلبه من جديد</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📍 عنوان MAC والطبقة الثانية</h2>
+            <p>عنوان MAC (Media Access Control) هو عنوان فريد لكل بطاقة شبكة في الجهاز على المستوى المحلي، بينما IP للإنترنت.</p>
+
+            <h3>الفرق بين MAC و IP</h3>
+            <div class="code-block">
+                <pre><code>عنوان MAC:
+- الشكل: 00:1A:2B:3C:4D:5E (48 بت - 6 بايتات)
+- الاستخدام: في الشبكة المحلية فقط (LAN)
+- المدى: لا يتجاوز الموجه الأول
+- الثبات: ثابت في البطاقة (في الأساس)
+- المثال: جهازك في منزلك
+
+عنوان IP:
+- الشكل: 192.168.1.100 (32 بت لـ IPv4)
+- الاستخدام: على الإنترنت العام
+- المدى: عالمي - في كل مكان
+- الثبات: قد يتغير (خاصة بـ DHCP)
+- المثال: جهازك على جوجل</code></pre>
+            </div>
+
+            <h3>عملية ARP</h3>
+            <p><strong>ARP (Address Resolution Protocol):</strong> تحويل من IP إلى MAC. عندما تريد إرسال بيانات لجهاز في شبكتك المحلية، تعرف عنوان IP لكن تحتاج عنوان MAC - هنا يأتي دور ARP.</p>
+
+            <div class="code-block">
+                <pre><code>عملية ARP:
+========================================
+1. جهازك: "من يملك عنوان IP 192.168.1.50؟"
+2. الجهاز المقصود يرد: "أنا، عنواني MAC هو 00:1A:2B:3C:4D:5E"
+3. جهازك: "شكراً، سأرسل له البيانات"</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔓 المنافذ (Ports) والـ Sockets</h2>
+            <p>المنفذ هو رقم يعرّف البروتوكول أو الخدمة على الجهاز. نظراً لأن هناك ملايين الاتصالات، المنافذ تساعد في توجيهها للمكان الصحيح.</p>
+
+            <h3>أنواع المنافذ</h3>
+            <ul>
+                <li><strong>منافذ آمنة (Well-known Ports):</strong> من 0 إلى 1023 (محجوزة للخدمات المعروفة)</li>
+                <li><strong>منافذ مرتجلة (Ephemeral Ports):</strong> من 1024 إلى 65535 (متاحة للبرامج)</li>
+            </ul>
+
+            <h3>منافذ مشهورة</h3>
+            <div class="code-block">
+                <pre><code>المنفذ | الخدمة | الوصف
+20/21  | FTP    | نقل الملفات
+22     | SSH    | تحكم آمن في الخادم
+23     | Telnet | تحكم غير آمن (قديم)
+25     | SMTP   | إرسال البريد
+53     | DNS    | ترجمة الأسماء
+80     | HTTP   | ويب بدون تشفير
+123    | NTP    | مزامنة الوقت
+143    | IMAP   | استقبال بريد متقدم
+443    | HTTPS  | ويب آمن مشفر
+3306   | MySQL  | قاعدة بيانات
+5432   | PostgreSQL | قاعدة بيانات
+8080   | وب بديل | خادم ويب إضافي</code></pre>
+            </div>
+
+            <h3>Socket = IP + Port</h3>
+            <p>الـ Socket هو مزيج من عنوان IP والمنفذ: 192.168.1.100:8080. يحدد تماماً من أين وإلى أين البيانات.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>🌐 أنماط الشبكات (Network Topologies)</h2>
+            <p>الطريقة التي يتم بها ربط الأجهزة معاً فيزيائياً أو منطقياً:</p>
+
+            <h3>نمط النجم (Star Topology)</h3>
+            <p>جميع الأجهزة متصلة برجهاز مركزي (عادة Switcher أو الموجه). الأكثر استخداماً اليوم.</p>
+            <ul>
+                <li><strong>الفائدة:</strong> سهل الصيانة، إذا جهاز واحد انقطع الباقي يشتغل</li>
+                <li><strong>العيب:</strong> إذا انقطع المركز انقطعت كل الشبكة</li>
+            </ul>
+
+            <h3>نمط الحلقة (Ring Topology)</h3>
+            <p>الأجهزة متصلة في حلقة - جهاز متصل بجهازين فقط. نادر جداً اليوم.</p>
+
+            <h3>نمط الحافلة (Bus Topology)</h3>
+            <p>جميع الأجهزة متصلة بسلك وسيط واحد. قديم جداً - كان يستخدم في الشبكات الأولى.</p>
+
+            <h3>نمط الشبكة المشبوكة (Mesh Topology)</h3>
+            <p>كل جهاز متصل بكل جهاز آخر. جداً موثوق لكن غالي جداً. تستخدم في الشبكات الحرجة المهمة.</p>
+
+            <h3>نمط الشجرة (Tree Topology)</h3>
+            <p>مزيج من نمط النجم والحافلة. موجر رئيسي يتصل بموجهات أخرى التي تتصل بأجهزة.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>⚡ السرعة والـ Bandwidth</h2>
+            <p>هناك فرق مهم بين السرعة والـ Bandwidth، كثير من الناس يخلطون بينهم:</p>
+
+            <h3>Bandwidth (النطاق الترددي)</h3>
+            <p>أقصى كمية بيانات يمكن نقلها في وحدة زمن. مثل حجم الأنابيب - أنبوب غليظ = bandwidth أكبر. تُقاس بـ Mbps (ميجابت في الثانية) أو Gbps.</p>
+
+            <h3>Speed (السرعة)</h3>
+            <p>السرعة الفعلية للبيانات. لو كان لديك bandwidth 100 Mbps لكن الخادم بطيء، السرعة الفعلية أقل.</p>
+
+            <h3>Throughput</h3>
+            <p>السرعة الفعلية المقاسة - كم البيانات التي نقلت فعلاً. دائماً أقل من الـ Bandwidth.</p>
+
+            <div class="code-block">
+                <pre><code>مثال:
+- Bandwidth: 100 Mbps (إمكانية الأنبوب)
+- Speed النظري: 100 Mbps (السرعة ممكنة)
+- Throughput الفعلي: 70-80 Mbps (ما نقل فعلاً)
+- السبب: بروتوكولات overhead، تأخيرات، أجهزة أخرى</code></pre>
+            </div>
+
+            <h3>وحدات السرعة</h3>
+            <div class="code-block">
+                <pre><code>1 Kilobit = 1 Kbps = 1,000 bps
+1 Megabit = 1 Mbps = 1,000 Kbps
+1 Gigabit = 1 Gbps = 1,000 Mbps
+1 Terabit = 1 Tbps = 1,000 Gbps
+
+تحويل من Mb إلى MB:
+1 Megabyte = 8 Megabit
+مثال: 100 Mbps = 12.5 MB/s (هذا سرعة التحميل الحقيقية)</code></pre>
+            </div>
+
+            <h3>معايير السرعات الحديثة</h3>
+            <ul>
+                <li><strong>Ethernet عادي:</strong> 100 Mbps</li>
+                <li><strong>Fast Ethernet:</strong> 1 Gbps</li>
+                <li><strong>Gigabit Ethernet:</strong> 10 Gbps</li>
+                <li><strong>WiFi 6 (802.11ax):</strong> 9.6 Gbps (نظري)</li>
+                <li><strong>5G الـ:</strong> 20 Gbps (نظري)</li>
+                <li><strong>Fiber Optic:</strong> حتى 400 Gbps</li>
+            </ul>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔐 NAT والترجمة</h2>
+            <p><strong>NAT (Network Address Translation):</strong> تقنية تترجم من عناوين IP خاصة لعام خارج الشبكة.</p>
+
+            <h3>السبب</h3>
+            <p>لدينا 254 عنوان في كل شبكة محلية، لكن ملايين الأجهزة في الإنترنت. بدل استخدام عنوان عام لكل جهاز، الموجر يترجم:</p>
+            <ul>
+                <li>من 192.168.1.100 (خاص) إلى 41.123.45.67 (عام)</li>
+                <li>جميع الأجهزة في المنزل يشتغلون تحت عنوان عام واحد</li>
+                <li>الموجر يذكر من يرسل ما، وعندما الرد يأتي يوجهه للجهاز الصحيح</li>
+            </ul>
+
+            <div class="code-block">
+                <pre><code>عملية NAT:
+========================================
+داخل المنزل:        خارج المنزل (على الإنترنت):
+192.168.1.100   →   41.123.45.67
+192.168.1.101   →   41.123.45.67
+192.168.1.102   →   41.123.45.67
+(كل الأجهزة تبدو كنفس الـ IP الخارجي)</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>⚠️ هجمات على الشبكات</h2>
+            <p>الشبكات معرضة لأنواع مختلفة من الهجمات. معرفة هذه الهجمات أساسية لحماية الشبكة:</p>
+
+            <h3>DDoS Attack (Distributed Denial of Service)</h3>
+            <p>إرسال آلاف الطلبات من عدة أجهزة في نفس الوقت لإغراق الخادم:</p>
+            <ul>
+                <li><strong>الهدف:</strong> جعل الموقع غير متاح للمستخدمين</li>
+                <li><strong>المثال:</strong> موقع فيسبوك يتعطل لساعات</li>
+                <li><strong>الطريقة:</strong> استخدام botnet (آلاف أجهزة مخترقة)</li>
+                <li><strong>الحماية:</strong> WAF (Web Application Firewall)، Rate limiting</li>
+            </ul>
+
+            <div class="code-block">
+                <pre><code>سيناريو DDoS:
+1. هاكر يخترق 10,000 جهاز (Botnet)
+2. يعطيهم أمر: "ارسل طلبات لـ google.com"
+3. كل جهاز يرسل 1000 طلب/ثانية
+4. إجمالي: 10 مليون طلب/ثانية
+5. Google: محملة جداً - تتعطل
+
+الدفاع:
+├─ رصد الأنماط الغريبة
+├─ حجب عناوين IP المريبة تلقائياً
+├─ توزيع الحمل على خوادم متعددة
+└─ Cloudflare، Akamai يؤمنون ضدها</code></pre>
+            </div>
+
+            <h3>SYN Flood Attack</h3>
+            <p>إرسال آلاف رسائل SYN بدون إكمال الاتصال TCP:</p>
+            <ul>
+                <li><strong>الفكرة:</strong> استنزاف موارد الخادم</li>
+                <li><strong>السبب:</strong> كل SYN تحتل مكان في جدول الانتظار</li>
+                <li><strong>النتيجة:</strong> الخادم لا يستطيع قبول اتصالات حقيقية</li>
+                <li><strong>الحماية:</strong> SYN cookies، Firewall filtering</li>
+            </ul>
+
+            <h3>Ping of Death</h3>
+            <p>إرسال رسالة ICMP بحجم أكبر من المسموح (كانت تعطل الأجهزة القديمة):</p>
+            <ul>
+                <li><strong>الحجم الطبيعي:</strong> 64 بايت</li>
+                <li><strong>رسالة مسمومة:</strong> 65,535 بايت</li>
+                <li><strong>النتيجة:</strong> تعطل الجهاز (في الأجهزة القديمة)</li>
+                <li><strong>الوضع الآن:</strong> معظم الأجهزة محمية)</li>
+            </ul>
+
+            <h3>Port Scanning</h3>
+            <p>مسح الوصول للمنافذ المفتوحة على جهاز أو شبكة:</p>
+            <div class="code-block">
+                <pre><code>أداة: Nmap (Network Mapper)
+
+مثال الاستخدام:
+nmap 192.168.1.100
+
+النتيجة:
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+80/tcp    open   http
+443/tcp   open   https
+3306/tcp  open   mysql
+
+الخطر:
+├─ الهاكر يعرف ما هي الخدمات المتاحة
+├─ يحاول استغلال نقاط ضعف معروفة
+└─ مثال: MySQL بدون كلمة مرور؟ دخول فوري
+
+الحماية:
+├─ إغلاق المنافذ غير الضرورية
+├─ Firewall يرصد Port Scanning
+├─ IDS (Intrusion Detection System)
+└─ تحديث البرامج دوري</code></pre>
+            </div>
+
+            <h3>Man-in-the-Middle (MITM)</h3>
+            <p>اعتراض البيانات بين طرفين:</p>
+            <ul>
+                <li><strong>السيناريو:</strong> أنت تتصل بـ BOT لتحديث البرنامج</li>
+                <li><strong>الهاكر:</strong> يقطع البث ويرسل برنامج مخترق</li>
+                <li><strong>النتيجة:</strong> جهازك يصير مخترق</li>
+                <li><strong>الحماية:</strong> HTTPS، توقيع رقمي للملفات</li>
+            </ul>
+
+            <h3>ARP Spoofing</h3>
+            <p>تزيف رسائل ARP للسيطرة على حركة المرور:</p>
+            <div class="code-block">
+                <pre><code>الهدف الحقيقي: 192.168.1.1 (الموجر)
+MAC: AA:BB:CC:DD:EE:FF
+
+الهاكر يدعي: أنا 192.168.1.1!
+MAC: XX:YY:ZZ:11:22:33
+
+النتيجة:
+├─ أجهزة الشبكة ترسل بيانات للهاكر
+├─ الهاكر يسجل كل شيء
+├─ الهاكر يعيد البيانات للموجر الحقيقي
+└─ لا أحد يلاحظ شيء
+
+الحماية:
+├─ ARP Spoofing Detection Tools
+├─ Static ARP Entries
+├─ Network Segmentation
+└─ VPN للبيانات الحساسة</code></pre>
+            </div>
+
+            <h3>DNS Spoofing</h3>
+            <p>تزيف رسائل DNS لتحويل المستخدم لموقع مزيف:</p>
+            <ul>
+                <li><strong>المثال:</strong> تريد الدخول لـ google.com</li>
+                <li><strong>الهاكر يعترض DNS:</strong> google.com = 192.168.1.50 (موقع مزيف)</li>
+                <li><strong>النتيجة:</strong> تدخل موقع وهمي يسرق بيانات</li>
+                <li><strong>الحماية:</strong> DNSSEC، استخدام DNS موثوق (8.8.8.8)</li>
+            </ul>
+
+            <h3>Packet Sniffing</h3>
+            <p>التقاط الحزم المرسلة على الشبكة وفحصها:</p>
+            <div class="code-block">
+                <pre><code>أداة: Wireshark (محترفة لتحليل الشبكات)
+
+ماذا يستطيع الهاكر أن يرى؟
+├─ HTTP برسائل: كلمات المرور - أرقام بطاقات
+├─ DNS queries: مواقع تتصفحها
+├─ Emails: محتوى البريد
+└─ أي بيانات بدون تشفير
+
+السيناريو:
+1. أنت مرتبط بـ WiFi المقهى
+2. هاكر على نفس الشبكة يشغل Wireshark
+3. يرى كلمات مرور والبيانات الخاصة
+4. خطر جداً!
+
+الحماية:
+├─ استخدام HTTPS فقط
+├─ VPN حتى على الشبكات عامة
+├─ Encryption من طرف لطرف
+└─ عدم إرسال بيانات حساسة على HTTP</code></pre>
+            </div>
+
+            <h3>Brute Force Attack</h3>
+            <p>محاولة كل كلمات المرور الممكنة:</p>
+            <ul>
+                <li><strong>الأداة:</strong> Hydra, John the Ripper</li>
+                <li><strong>المثال:</strong> تجربة 1000 كلمة مرور/ثانية</li>
+                <li><strong>النتيجة:</strong> كلمة مرور ضعيفة (123456) تنكسر في ثوان</li>
+                <li><strong>الحماية:</strong> كلمات قوية، Rate limiting (تأخير بين المحاولات)</li>
+            </ul>
+
+            <h3>Social Engineering</h3>
+            <p>خداع الإنسان بدل اختراق الأنظمة:</p>
+            <div class="code-block">
+                <pre><code>أمثلة:
+1. الاتصال الهاتفي الكاذب
+   └─ "مرحباً، أنا من قسم IT - أحتاج كلمة مرورك"
+
+2. البريد الاحتيالي (Phishing)
+   └─ "بريد يبدو من البنك - اضغط هنا لتحديث البيانات"
+
+3. USB مسموم مرمي
+   └─ "USB به ملفات مهمة" - في الواقع فيروس
+
+4. Pretexting
+   └─ "أنا موظف جديد، هل تستطيع مساعدتي؟"
+
+الحماية:
+├─ التدريب والوعي الأمني
+├─ عدم فتح مرفقات غريبة
+├─ التحقق من الأرقام الموثوقة
+├─ عدم مشاركة كلمات المرور
+└─ الشك دائماً في الطلبات غير العادية</code></pre>
+            </div>
+
+            <h3>Zero-Day Exploit</h3>
+            <p>استغلال ثغرة لم تكتشفها الجهة المصنعة بعد:</p>
+            <ul>
+                <li><strong>الفكرة:</strong> ثغرة موجودة لكن بدون حل رسمي</li>
+                <li><strong>الخطر:</strong> لا توجد حماية ضدها</li>
+                <li><strong>المثال:</strong> Windows جديد له ثغرة لم تكتشف</li>
+                <li><strong>الحماية:</strong> Threat hunting، Behavior monitoring</li>
+            </ul>
+
+            <h3>Insider Threats</h3>
+            <p>الخطر من داخل المنظمة نفسها:</p>
+            <ul>
+                <li><strong>الموظف الحاقد:</strong> يسرب البيانات المهمة</li>
+                <li><strong>الإهمال:</strong> موظف ينسى قفل الكمبيوتر</li>
+                <li><strong>الضعف:</strong> موظف يستخدم كلمة مرور ضعيفة مشهورة</li>
+                <li><strong>الحماية:</strong> مراقبة الوصول، تدريب الموظفين، Least Privilege</li>
+            </ul>
+
+            <h3>أفضل الممارسات للدفاع ضد الهجمات</h3>
+            <div class="code-block">
+                <pre><code>1. Defense in Depth (الدفاع المتعدد الطبقات)
+   ├─ Firewall (الحد الأول)
+   ├─ IDS/IPS (كشف وقطع الهجمات)
+   ├─ Antivirus (الفيروسات)
+   ├─ Encryption (البيانات مشفرة)
+   └─ User Training (الإنسان هو الخط الأخير)
+
+2. Zero Trust Architecture
+   ├─ لا تثق بأي أحد حتى الموظفين
+   ├─ التحقق من الجميع
+   ├─ MFA مجبري
+   └─ Least Privilege (أقل صلاحيات)
+
+3. Monitoring & Logging
+   ├─ تسجيل كل الأنشطة
+   ├─ SIEM (Security Information Event Management)
+   ├─ رصد الأنماط غير العادية
+   └─ Incident Response Team
+
+4. Regular Updates & Patches
+   ├─ تحديث Firmware
+   ├─ تحديث OS والبرامج
+   ├─ Patch Management
+   └─ فحص الثغرات الدورية
+
+5. Security Testing
+   ├─ Penetration Testing (اختبارات الاختراق)
+   ├─ Vulnerability Assessment
+   ├─ Red Team Exercises
+   └─ البحث المستمر</code></pre>
+            </div>
+        </section>
+
+        <!-- Videos Section at End -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات الشرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌐 مقدمة شاملة عن الشبكات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">شرح كامل للمفاهيم الأساسية والمصطلحات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📊 نموذج OSI بالتفصيل</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">شرح تفصيلي لكل طبقة من الطبقات السبع</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔗 أنواع الشبكات المختلفة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الفرق بين LAN و WAN و MAN مع أمثلة عملية</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 عناوين IP والتقسيم الشبكي</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">IPv4 و IPv6 والقناع والبوابة الافتراضية</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 بروتوكولات TCP و UDP</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الفرق والمقارنة والاستخدامات المختلفة</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌍 رحلة البيانات على الإنترنت</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مثال عملي شامل لكيفية عمل الإنترنت</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="networking.html" class="btn-back">← العودة إلى الشبكات</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

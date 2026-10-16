@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>الدورات - Omni IT</title>
+    <link rel='stylesheet' href='s1.css'>
+    <style>
+        .courses-hero { text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-bottom: 2rem; }
+        .courses-hero h1 { font-size: 2.5rem; margin: 0; }
+        .courses-hero p { font-size: 1.1rem; margin-top: 0.5rem; opacity: 0.9; }
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        .course-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+        .course-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .course-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; }
+        .course-header h2 { margin: 0 0 0.5rem 0; font-size: 1.5rem; }
+        .course-level { font-size: 0.9rem; opacity: 0.8; }
+        .course-body { padding: 1.5rem; }
+        .course-description { color: #555; margin-bottom: 1.5rem; line-height: 1.6; }
+        .course-topics { margin-bottom: 1.5rem; }
+        .course-topics h4 { color: #333; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .course-topics ul { list-style: none; padding: 0; margin: 0; }
+        .course-topics li { padding: 0.4rem 0; color: #666; font-size: 0.9rem; padding-right: 1.5rem; position: relative; }
+        .course-topics li:before { content: "✓"; position: absolute; right: 0; color: #667eea; font-weight: bold; }
+        .course-footer { border-top: 1px solid #eee; padding-top: 1rem; }
+        .course-duration { color: #888; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .course-btn { display: inline-block; background: #667eea; color: white; padding: 0.7rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.3s; width: 100%; text-align: center; box-sizing: border-box; }
+        .course-btn:hover { background: #764ba2; }
+        .back-section { text-align: center; padding: 2rem; }
+        .back-btn { background: #667eea; color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .back-btn:hover { background: #764ba2; }
+        .navbar { background: #2c3e50; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .navbar-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; color: white; font-weight: 700; font-size: 1.3rem; }
+        .logo-icon { font-size: 1.5rem; }
+        .nav-links { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+        .nav-link { color: #ecf0f1; text-decoration: none; font-weight: 500; transition: color 0.3s; cursor: pointer; }
+        .nav-link:hover { color: #667eea; }
+    </style>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo"><span class="logo-icon">📚</span><span>Omni IT</span></div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="#" class="nav-link" data-submenu="courses" onclick="openSidebar('courses'); return false;">الدورات</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeBtn">✕ إغلاق</button>
+        <div class="sidebar-content" id="sidebarContent"></div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <section class="courses-hero">
+            <h1>🎓 دورات Omni IT</h1>
+            <p>اختر الدورة المناسبة لك وابدأ رحلتك التعليمية</p>
+        </section>
+
+        <section class="courses-grid">
+            <!-- دورات المبتدئين -->
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🌱 أساسيات البرمجة</h2>
+                    <span class="course-level">للمبتدئين</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">تعلم مبادئ البرمجة الأساسية من الصفر وافهم كيفية عمل الأكواد.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>المتغيرات والأنواع</li>
+                            <li>الدوال والعمليات</li>
+                            <li>الحلقات والشروط</li>
+                            <li>مشاريع بسيطة</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 6 أسابيع</div>
+                        <a href="#" class="course-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🌐 أساسيات الويب</h2>
+                    <span class="course-level">للمبتدئين</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">تعلم HTML و CSS و JavaScript لإنشاء مواقع ويب جميلة وتفاعلية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>HTML5 الأساسي</li>
+                            <li>CSS3 وتصميم الويب</li>
+                            <li>JavaScript الأساسي</li>
+                            <li>موقع ويب كامل</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 8 أسابيع</div>
+                        <a href="#" class="course-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🔒 أساسيات الأمن السيبراني</h2>
+                    <span class="course-level">للمبتدئين</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">فهم أساسيات الأمن السيبراني وحماية الأنظمة من التهديدات.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>مقدمة الأمن السيبراني</li>
+                            <li>أنواع الهجمات</li>
+                            <li>الحماية الأساسية</li>
+                            <li>أفضل الممارسات</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 6 أسابيع</div>
+                        <a href="#" class="course-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- دورات متوسطة -->
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🐍 Python المتقدم</h2>
+                    <span class="course-level">متوسط</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">متابعة رحلتك مع Python وتعلم مفاهيم متقدمة وتطبيقات حقيقية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>البرمجة الكائنية التوجه</li>
+                            <li>المكتبات والأطر</li>
+                            <li>معالجة البيانات</li>
+                            <li>تطبيقات ويب</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 8 أسابيع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🔗 شبكات الحاسوب</h2>
+                    <span class="course-level">متوسط</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">فهم عمق معمارية الشبكات والبروتوكولات والتطبيقات العملية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>نموذج OSI</li>
+                            <li>البروتوكولات</li>
+                            <li>إدارة الشبكات</li>
+                            <li>التكوين والدعم</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 10 أسابيع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>⚛️ React و JavaScript</h2>
+                    <span class="course-level">متوسط</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">تعلم إطار React الشهير وبناء تطبيقات ويب حديثة وديناميكية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>مقدمة React</li>
+                            <li>الحالة والخصائص</li>
+                            <li>إدارة الحالة</li>
+                            <li>APIs والتطبيقات</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 8 أسابيع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- دورات متقدمة -->
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🚀 DevOps والحوسبة السحابية</h2>
+                    <span class="course-level">متقدم</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">اتقن DevOps والعمل مع الأنظمة السحابية والحاويات والأتمتة.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>Docker والحاويات</li>
+                            <li>Kubernetes والتوزيع</li>
+                            <li>CI/CD والأتمتة</li>
+                            <li>AWS و Azure</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 12 أسبوع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🛡️ أمن الأنظمة المتقدم</h2>
+                    <span class="course-level">متقدم</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">أتقن تقنيات الأمن المتقدمة والاختبار الاختراقي والحماية من التهديدات.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>اختبار الاختراق</li>
+                            <li>كشف التهديدات</li>
+                            <li>التشفير المتقدم</li>
+                            <li>رد الحوادث</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 12 أسبوع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>🤖 الذكاء الاصطناعي والبيانات</h2>
+                    <span class="course-level">متقدم</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">تعلم التعلم الآلي وتحليل البيانات وبناء نماذج ذكية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>أساسيات ML</li>
+                            <li>مكتبات التعلم</li>
+                            <li>تحليل البيانات</li>
+                            <li>نماذج متقدمة</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 14 أسبوع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الشهادات المهنية -->
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>📜 شهادة CompTIA Security+</h2>
+                    <span class="course-level">شهادة مهنية</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">اختبر مهاراتك واحصل على شهادة معترف بها عالمياً في الأمن السيبراني.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>تغطية شاملة للمنهج</li>
+                            <li>اختبارات تدريبية</li>
+                            <li>دراسة حالات</li>
+                            <li>تحضير الامتحان</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 10 أسابيع</div>
+                        <a href="#" class="course-btn">ابدأ الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>📜 شهادة CCNA - الشبكات</h2>
+                    <span class="course-level">شهادة مهنية</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">احصل على شهادة Cisco المعترف بها عالمياً في تخصص الشبكات.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>أساسيات الشبكات</li>
+                            <li>توجيه وتبديل</li>
+                            <li>أمن الشبكات</li>
+                            <li>عمليات عملية</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 16 أسبوع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-header">
+                    <h2>📜 شهادة AWS Solutions</h2>
+                    <span class="course-level">شهادة مهنية</span>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">احصل على شهادة Amazon AWS المتخصصة في الحوسبة السحابية.</p>
+                    <div class="course-topics">
+                        <h4>🎯 المحتوى:</h4>
+                        <ul>
+                            <li>خدمات AWS الأساسية</li>
+                            <li>العمارة السحابية</li>
+                            <li>الأمان والامتثال</li>
+                            <li>الاختبارات العملية</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-duration">⏱️ 12 أسبوع</div>
+                        <a href="#" class="course-btn">التسجيل</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-section">
+            <a href="o1.html" class="back-btn">العودة للرئيسية</a>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

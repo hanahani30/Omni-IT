@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScript - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>⚙️ JavaScript</h1>
+            <p>لغة برمجة قوية للويب التفاعلي</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>مقدمة عن JavaScript</h2>
+            <p>JavaScript هي لغة برمجية تعمل في المتصفح والخادم، تُستخدم لإضافة التفاعل والحركة لصفحات الويب. وهي اللغة الأساسية لتطوير تطبيقات ويب حديثة وتفاعلية.</p>
+        </section>
+
+        <!-- Console.log -->
+        <section class="lang-section">
+            <h2>طباعة على Console</h2>
+            <p>لطباعة الرسائل في وحدة التحكم (Console):</p>
+            <div class="code-block">
+                <pre><code>console.log("مرحباً في JavaScript!");
+console.log(123);
+console.log("النتيجة:", 5 + 3);</code></pre>
+            </div>
+        </section>
+
+        <!-- Variables -->
+        <section class="lang-section">
+            <h2>المتغيرات (Variables)</h2>
+            <p>المتغيرات لتخزين البيانات والقيم:</p>
+            <div class="code-block">
+                <pre><code>// استخدام let و const (الحديثة)
+let name = "أحمد";
+const age = 25;
+var height = 1.75;  // قديمة
+
+// تغيير القيمة
+name = "محمد";
+
+// طباعة المتغيرات
+console.log(name);
+console.log(age);
+console.log(height);</code></pre>
+            </div>
+        </section>
+
+        <!-- Data Types -->
+        <section class="lang-section">
+            <h2>أنواع البيانات</h2>
+            <div class="code-block">
+                <pre><code>// String (نص)
+let text = "Hello World";
+
+// Number (عدد)
+let number = 42;
+let decimal = 3.14;
+
+// Boolean (صح/خطأ)
+let flag = true;
+
+// Array (مصفوفة/قائمة)
+let fruits = ["تفاح", "موز", "برتقال"];
+let numbers = [1, 2, 3, 4, 5];
+
+// Object (كائن)
+let person = {
+    name: "أحمد",
+    age: 25,
+    city: "الرياض"
+};</code></pre>
+            </div>
+        </section>
+
+        <!-- Operations -->
+        <section class="lang-section">
+            <h2>العمليات الحسابية والمنطقية</h2>
+            <div class="code-block">
+                <pre><code>// حسابية
+console.log(10 + 5);    // 15
+console.log(10 - 5);    // 5
+console.log(10 * 5);    // 50
+console.log(10 / 5);    // 2
+console.log(10 % 3);    // 1
+
+// مقارنة
+console.log(10 > 5);    // true
+console.log(10 == 10);  // true
+console.log(10 === "10"); // false
+
+// منطقية
+console.log(true && false);  // false
+console.log(true || false);  // true
+console.log(!true);          // false</code></pre>
+            </div>
+        </section>
+
+        <!-- if else -->
+        <section class="lang-section">
+            <h2>الشروط (if/else)</h2>
+            <div class="code-block">
+                <pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("أنت بالغ");
+} else if (age >= 13) {
+    console.log("أنت مراهق");
+} else {
+    console.log("أنت طفل");
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Loops -->
+        <section class="lang-section">
+            <h2>الحلقات (Loops)</h2>
+            <h3>حلقة for:</h3>
+            <div class="code-block">
+                <pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i);  // 0, 1, 2, 3, 4
+}</code></pre>
+            </div>
+            <h3>حلقة while:</h3>
+            <div class="code-block">
+                <pre><code>let count = 0;
+while (count < 5) {
+    console.log(count);
+    count++;
+}</code></pre>
+            </div>
+            <h3>forEach:</h3>
+            <div class="code-block">
+                <pre><code>let fruits = ["تفاح", "موز", "برتقال"];
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});</code></pre>
+            </div>
+        </section>
+
+        <!-- Functions -->
+        <section class="lang-section">
+            <h2>الدوال (Functions)</h2>
+            <div class="code-block">
+                <pre><code>// دالة بسيطة
+function greet(name) {
+    return "مرحباً " + name;
+}
+console.log(greet("أحمد"));
+
+// Arrow Function (حديثة)
+const add = (a, b) => {
+    return a + b;
+};
+console.log(add(5, 3));  // 8
+
+// Arrow Function مختصرة
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 5));  // 20</code></pre>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section class="lang-section">
+            <h2>التعامل مع الأحداث (Events)</h2>
+            <div class="code-block">
+                <pre><code>// HTML
+// &lt;button id="myBtn"&gt;اضغط هنا&lt;/button&gt;
+
+// JavaScript
+let button = document.getElementById("myBtn");
+
+button.addEventListener("click", function() {
+    console.log("تم الضغط على الزر!");
+});
+
+// أو باستخدام Arrow Function
+button.addEventListener("click", () => {
+    alert("مرحباً!");
+});</code></pre>
+            </div>
+        </section>
+
+        <!-- Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب بنفسك</h3>
+            <p style="color: #f0f0f0; margin-bottom: 1.5rem;">اكتب كودك الخاص وشغله مباشرة</p>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="jsEditor" placeholder="// اكتب كود JavaScript هنا
+// مثال:
+let name = 'أحمد';
+let age = 25;
+console.log('اسمي: ' + name);
+console.log('عمري: ' + age);" class="js-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div class="output-result" id="jsOutput"></div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="runJsBtn">▶️ شغّل الكود</button>
+                <button class="clear-btn" id="clearJsBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 أساسيات JavaScript</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم أساسيات JavaScript والمتغيرات والدوال</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎨 التعامل مع DOM</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">كيفية التحكم بعناصر الصفحة وتغيير المحتوى</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚡ الأحداث والتفاعل</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التعامل مع أحداث المستخدم والقوائم</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة إلى لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

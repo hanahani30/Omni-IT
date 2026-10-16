@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linux - معلومات</title>
+    <link rel='stylesheet' href='s1.css'>
+    <style>
+        .os-info-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-right: 4px solid #2ecc71;
+        }
+        .os-info-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 0.5rem;
+        }
+        .os-info-section ul { list-style: none; padding: 0; }
+        .os-info-section li { padding: 0.5rem 0; color: #555; line-height: 1.8; }
+        .info-card { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2); }
+        .info-card h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        .info-card p { font-size: 1rem; line-height: 1.8; }
+    </style>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">🐧</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="os.html" class="nav-link">أنظمة التشغيل</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>🐧 Linux</h1>
+            <p>نظام مفتوح المصدر شائع للخوادم والبرمجة والحوسبة السحابية</p>
+        </section>
+
+        <section class="os-info-section">
+            <div class="info-card">
+                <h3>📋 الوصف</h3>
+                <p>Linux نظام قوي وموثوق مفتوح المصدر يوفر الحرية والمرونة، ويستخدمه الملايين من مطوري التطبيقات والشركات الكبرى.</p>
+            </div>
+        </section>
+        <section class="os-info-section">
+            <h2>🔧 أوامر شائعة في الطرفية</h2>
+            <ul>
+                <li><code>ls</code> — عرض ملفات المجلد</li>
+                <li><code>cd</code> — تغيير المجلد</li>
+                <li><code>grep</code> — البحث داخل الملفات</li>
+                <li><code>sudo apt install &lt;pkg&gt;</code> — تثبيت الحزم (Ubuntu/Debian)</li>
+                <li><code>systemctl start &lt;service&gt;</code> — إدارة الخدمات</li>
+            </ul>
+        </section>
+
+        <section class="os-info-section">
+            <h2>⚡ أمثلة عملية</h2>
+            <div class="code-block"><pre><code>ls -la</code></pre><button class="copy-btn">نسخ</button></div>
+            <div class="code-block"><pre><code>sudo apt update && sudo apt upgrade</code></pre><button class="copy-btn">نسخ</button></div>
+            <div class="code-block"><pre><code>df -h
+sudo du -ah / | sort -rh | head -n 20</code></pre><button class="copy-btn">نسخ</button></div>
+        </section>
+
+        <section class="os-info-section">
+            <h2>📦 التوزيعات الشهيرة</h2>
+            <p>Ubuntu • Debian • CentOS • Fedora • Arch Linux</p>
+        </section>
+
+        <section class="os-info-section">
+            <h2>🎯 الاستخدامات</h2>
+            <ul>
+                <li>خوادم الويب والاستضافة</li>
+                <li>تطوير وبرمجة التطبيقات</li>
+                <li>الحوسبة السحابية والأنظمة الموزعة</li>
+                <li>أنظمة الخادم المؤسسي</li>
+            </ul>
+        </section>
+
+        <div style="text-align:center; margin-top:30px; padding:20px;">
+            <a href="os.html" style="background: #2ecc71; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600;">رجوع إلى أنظمة التشغيل</a>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

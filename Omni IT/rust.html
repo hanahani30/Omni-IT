@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rust - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🦀 Rust</h1>
+            <p>لغة برمجة حديثة آمنة وسريعة جداً</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن Rust</h2>
+            <p>Rust هي لغة برمجة حديثة تركز على الأمان والسرعة والتزامن. تُحافظ على سرعة C++ لكن بدون أخطاء الذاكرة الخطيرة.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 أساسيات Rust</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">المتغيرات والأنواع</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔒 نظام الملكية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Ownership و Borrowing</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚙️ البرمجة المتقدمة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Traits و Error Handling</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرنامج الأول - Hello World</h2>
+            <div class="code-block">
+                <pre><code>fn main() {
+    println!("مرحباً في Rust!");
+}
+
+النتيجة:
+مرحباً في Rust!
+
+شرح الكود:
+├─ fn main() : دالة البرنامج الرئيسية
+└─ println! : ماكرو للطباعة</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>المتغيرات والملكية</h2>
+            <div class="code-block">
+                <pre><code>نظام الملكية في Rust:
+═════════════════════════════
+
+fn main() {
+    // المتغيرات في Rust غير قابلة للتغيير بشكل افتراضي
+    let x = 5;
+    // x = 6; // خطأ! لا يمكن تغييرها
+    
+    // لتجعلها قابلة للتغيير
+    let mut y = 5;
+    y = 6; // صحيح!
+    println!("y = {}", y);
+    
+    // نظام الملكية
+    let s1 = String::from("مرحباً");
+    let s2 = s1; // الملكية انتقلت من s1 إلى s2
+    
+    // println!("{}", s1); // خطأ! s1 لا يملك السلسلة بعد الآن
+    println!("{}", s2); // صحيح!
+}
+
+نظام الاستعارة (Borrowing):
+═════════════════════════════
+
+fn main() {
+    let s1 = String::from("مرحباً");
+    
+    // استعارة immutable
+    let s2 = &s1;
+    println!("{}", s2);
+    println!("{}", s1); // لا يزال بإمكاني استخدام s1
+    
+    // استعارة mutable
+    let mut s3 = String::from("مرحباً");
+    borrow_mut(&mut s3);
+    println!("{}", s3);
+}
+
+fn borrow_mut(s: &mut String) {
+    s.push_str(" يا صديقي");
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>معالجة الأخطاء</h2>
+            <div class="code-block">
+                <pre><code>نوع Result في Rust:
+═════════════════════════════
+
+fn divide(a: i32, b: i32) -> Result&lt;i32, String&gt; {
+    if b == 0 {
+        Err(String::from("لا يمكن القسمة على صفر"))
+    } else {
+        Ok(a / b)
+    }
+}
+
+fn main() {
+    match divide(10, 2) {
+        Ok(result) => println!("النتيجة: {}", result),
+        Err(e) => println!("خطأ: {}", e),
+    }
+    
+    match divide(10, 0) {
+        Ok(result) => println!("النتيجة: {}", result),
+        Err(e) => println!("خطأ: {}", e),
+    }
+}
+
+النتيجة:
+النتيجة: 5
+خطأ: لا يمكن القسمة على صفر</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🚀 استخدامات Rust الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. أنظمة التشغيل والبرامج الموثوقة
+   └─ مثال: Linux Kernel (جزء منه)
+      ├─ دعم محركات الأقراص الجديدة
+      ├─ سائقي الأجهزة
+      └─ أمان عالي جداً
+
+2. متصفحات الويب
+   └─ مثال: Firefox و Servo
+      ├─ محرك التصيير
+      ├─ معالجات الصور
+      └─ كفاءة عالية جداً
+
+3. تطبيقات الحوسبة السحابية
+   └─ مثال: Cloudflare Workers
+      ├─ معالجة ملايين الطلبات
+      ├─ استهلاك منخفض للموارد
+      └─ بدء سريع جداً
+
+4. البرامج المدمجة
+   └─ مثال: الذكاء الاصطناعي على الأجهزة
+      ├─ معالجات خفيفة الوزن
+      ├─ استهلاك طاقة منخفض
+      └─ أداء عالي</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 Pattern Matching</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مطابقة الأنماط في Rust</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📦 المكتبات والحزم</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Cargo و Crates</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎓 المشاريع المتقدمة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مشاريع كاملة بـ Rust</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

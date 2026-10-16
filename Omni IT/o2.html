@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Programming Languages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='s2.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src="image/WhatsApp_Image_2026-02-17_at_9.02.34_PM-removebg-preview.png" alt="Logo" width="40" height="40">
+                </span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link" data-submenu="languages">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link" data-submenu="networking">الشبكات</a></li>
+                <li><a href="#" class="nav-link" data-submenu="courses">الدورات</a></li>
+                <li><a href="#" class="nav-link" data-submenu="about">حول</a></li>
+                <li><a href="#" class="nav-link" data-submenu="contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" id="closeBtn">✕ إغلاق</button>
+        <div class="sidebar-content" id="sidebarContent">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </aside>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero">
+            <h1>لغات البرمجة</h1>
+            <p>اكتشف أشهر لغات البرمجة وتعلم الأساسيات</p>
+        </section>
+
+        <!-- Programming Languages Cards -->
+        <section class="languages-section">
+            <div class="language-card">
+                <h2>🐍 Python</h2>
+                <p>لغة برمجة قوية وسهلة التعلم مناسبة للمبتدئين والمحترفين</p>
+                <ul>
+                    <li>استخدامات متعددة (Web, AI, Data Science)</li>
+                    <li>مكتبات قوية وشاملة</li>
+                    <li>أفضل للتطبيقات الحقيقية</li>
+                </ul>
+                <a href="python.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>⚙️ JavaScript</h2>
+                <p>لغة برمجة أساسية لتطوير تطبيقات الويب التفاعلية</p>
+                <ul>
+                    <li>تعمل في المتصفح والخادم</li>
+                    <li>تطبيقات ويب متقدمة</li>
+                    <li>أطر عمل قوية مثل React و Vue</li>
+                </ul>
+                <a href="javascript.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>☕ Java</h2>
+                <p>لغة برمجة قوية موثوقة للتطبيقات الكبيرة</p>
+                <ul>
+                    <li>تطبيقات الشركات الكبرى</li>
+                    <li>موثوقة وآمنة جداً</li>
+                    <li>أداء عالي جداً</li>
+                </ul>
+                <a href="java.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>⚡ C++</h2>
+                <p>لغة برمجة سريعة وفعالة للبرامج عالية الأداء</p>
+                <ul>
+                    <li>الألعاب والرسومات</li>
+                    <li>أنظمة التشغيل</li>
+                    <li>التطبيقات عالية الأداء</li>
+                </ul>
+                <a href="cpp.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🐘 PHP</h2>
+                <p>لغة برمجة متخصصة في تطوير الويب من الجانب الخادم</p>
+                <ul>
+                    <li>إنشاء مواقع ديناميكية</li>
+                    <li>معالجة البيانات وقواعد البيانات</li>
+                    <li>سهلة التعلم والاستخدام</li>
+                </ul>
+                <a href="php.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>📘 TypeScript</h2>
+                <p>تطوير JavaScript مع التحقق من الأنواع</p>
+                <ul>
+                    <li>تطوير تطبيقات أكثر أماناً</li>
+                    <li>توافق كامل مع JavaScript</li>
+                    <li>أفضل دعم من IDEs</li>
+                </ul>
+                <a href="typescript.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🦀 Rust</h2>
+                <p>لغة برمجة حديثة سريعة وفعالة للتطبيقات الموزعة</p>
+                <ul>
+                    <li>سرعة عالية جداً في الأداء</li>
+                    <li>تطوير الخوادم والبنية التحتية</li>
+                    <li>سهلة التعلم والاستخدام</li>
+                </ul>
+                <a href="rust.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>⚙️ Go</h2>
+                <p>لغة برمجة آمنة وسريعة بدون garbage collector</p>
+                <ul>
+                    <li>أمان الذاكرة دون التضحية بالأداء</li>
+                    <li>تطوير البرامج الحرجة والنظم</li>
+                    <li>منع الأخطاء الشائعة</li>
+                </ul>
+                <a href="go.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>#️⃣ C#</h2>
+                <p>لغة برمجة قوية لتطوير تطبيقات Windows و Web</p>
+                <ul>
+                    <li>تطوير تطبيقات سطح المكتب</li>
+                    <li>تطوير الألعاب مع Unity</li>
+                    <li>تطبيقات الويب مع ASP.NET</li>
+                </ul>
+                <a href="csharp.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>💎 Ruby</h2>
+                <p>لغة برمجة ديناميكية موجهة للإنتاجية السريعة</p>
+                <ul>
+                    <li>تطوير المشاريع بسرعة عالية</li>
+                    <li>إطار عمل Rails قوي</li>
+                    <li>مرنة وممتعة في الاستخدام</li>
+                </ul>
+                <a href="ruby.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🍎 Swift</h2>
+                <p>لغة برمجة حديثة لتطوير تطبيقات Apple</p>
+                <ul>
+                    <li>تطوير تطبيقات iOS و macOS</li>
+                    <li>أمان عالي في المتغيرات</li>
+                    <li>سريعة وفعالة جداً</li>
+                </ul>
+                <a href="swift.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🎯 Kotlin</h2>
+                <p>لغة برمجة حديثة لمنصة JVM وتطوير Android</p>
+                <ul>
+                    <li>تطوير تطبيقات Android الحديثة</li>
+                    <li>توافق كامل مع Java</li>
+                    <li>أكثر أماناً وسهولة من Java</li>
+                </ul>
+                <a href="kotlin.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🌍 HTML</h2>
+                <p>لغة لإنشاء هياكل صفحات الويب والمحتوى</p>
+                <ul>
+                    <li>أساس أي موقع ويب</li>
+                    <li>سهلة التعلم للمبتدئين</li>
+                    <li>تُستخدم مع CSS و JavaScript</li>
+                </ul>
+                <a href="html.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🎨 CSS</h2>
+                <p>لغة تنسيق وتصميم صفحات الويب والتطبيقات</p>
+                <ul>
+                    <li>تصميم مواقع جميلة واحترافية</li>
+                    <li>الرسوميات والحركات المتقدمة</li>
+                    <li>التصميم المتجاوب والحديث</li>
+                </ul>
+                <a href="css.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+
+            <div class="language-card">
+                <h2>🔤 C</h2>
+                <p>لغة برمجة أساسية قديمة وقوية جداً</p>
+                <ul>
+                    <li>تطوير أنظمة التشغيل والنوى</li>
+                    <li>برامج عالية الأداء جداً</li>
+                    <li>أساس لتعلم لغات أخرى</li>
+                </ul>
+                <a href="c.html" class="lang-btn">اعرف أكثر</a>
+            </div>
+    </main>
+
+    <script src='main.js'></script>
+</body>
+</html>

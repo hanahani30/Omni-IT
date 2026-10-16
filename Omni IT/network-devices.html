@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>أجهزة الشبكة - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="networking.html" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>💻 أجهزة الشبكة</h1>
+            <p>معدات وأجهزة الشبكات الأساسية مع أمثلة عملية</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن أجهزة الشبكة</h2>
+            <p>أجهزة الشبكة هي المكونات الفيزيائية والإلكترونية التي تربط وتسهل تبادل البيانات بين أجهزة الحاسوب والأنظمة المختلفة. بدون هذه الأجهزة، لن تكون هناك شبكات. كل جهاز متخصص في وظيفة معينة، وفهم هذه الأجهزة أساسي لأي شخص يعمل في مجال الشبكات أو تكنولوجيا المعلومات.</p>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="lang-section">
+            <h2>🔄 الموجه (Router) - قلب الشبكة</h2>
+            <p>جهاز متقدم مسؤول عن توجيه البيانات بين الشبكات المختلفة، والأهم يوصل شبكتك المحلية بالإنترنت العالمي:</p>
+            
+            <h3>الخصائص الأساسية</h3>
+            <ul>
+                <li><strong>الطبقة:</strong> الطبقة الثالثة من نموذج OSI (Network Layer)</li>
+                <li><strong>وحدة التوجيه:</strong> تستخدم عناوين IP</li>
+                <li><strong>الذاكرة:</strong> جدول التوجيه (Routing Table) يخزن المسارات الأفضل</li>
+                <li><strong>البروتوكول:</strong> يستخدم بروتوكولات مثل OSPF أو BGP</li>
+            </ul>
+
+            <h3>الأنواع</h3>
+            <ul>
+                <li><strong>موجهات المنزل:</strong> بسيطة رخيصة (TP-Link, D-Link) - سعر 100-500 ريال</li>
+                <li><strong>موجهات الشركات:</strong> عالية الأداء (Cisco, Juniper) - سعر 10,000+ ريال</li>
+                <li><strong>موجهات المزود:</strong> ضخمة جداً تتعامل مع ملايين الاتصالات</li>
+            </ul>
+
+            <h3>مثال واقعي</h3>
+            <p>في منزلك: الموجه جهاز صغير في الزاوية يحتوي على ضوء أخضر كبير. يستقبل الإشارة من الشركة المزودة للإنترنت عبر كابل (أو تقنية أخرى) ثم يوزعها على جميع أجهزتك. إذا كان لديك 10 أجهزة في المنزل، جميعها توصلت بالموجه الذي يوجه البيانات من وإلى الإنترنت.</p>
+
+            <h3>الإشارات على الموجه</h3>
+            <div class="code-block">
+                <pre><code>TP-Link Archer الإشارات:
+━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 Power    - الموجه يعمل
+🟢 Internet - متصل بالإنترنت
+🟢 WiFi 2.4G - الشبكة اللاسلكية 2.4 جيجا
+🟢 5G       - الشبكة اللاسلكية 5 جيجا
+🟢 Ethernet - أجهزة متصلة بسلك Ethernet
+
+إذا كان Internet أصفر أو أحمر
+← الإنترنت لا يعمل بشكل صحيح</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📛 المحول (Switch) - يوصل الشبكة المحلية</h2>
+            <p>جهاز يربط عدة أجهزة معاً في نفس الشبكة المحلية (LAN) بسرعة عالية جداً:</p>
+
+            <h3>الخصائص الأساسية</h3>
+            <ul>
+                <li><strong>الطبقة:</strong> الطبقة الثانية (Data Link Layer)</li>
+                <li><strong>وحدة التوجيه:</strong> تستخدم عناوين MAC</li>
+                <li><strong>السرعة:</strong> 10/100 Mbps (قديم) أو 1 Gbps (حديث) أو أسرع</li>
+                <li><strong>الموانئ:</strong> عددها يتراوح من 4 لـ 48 منفذ Ethernet</li>
+            </ul>
+
+            <h3>الفرق بين Switch و Hub</h3>
+            <ul>
+                <li><strong>Hub (قديم):</strong> يبث البيانات لجميع الأجهزة - بطيء</li>
+                <li><strong>Switch (حديث):</strong> يرسل البيانات فقط للجهاز المقصود - أسرع بكثير</li>
+            </ul>
+
+            <h3>مثال واقعي</h3>
+            <p>في مختبر حاسوب المدرسة: يوجد محول صغير في الخزانة يوصل أسلاك Ethernet من جميع الـ 20 جهاز كمبيوتر. هذا المحول يسمح بنقل الملفات بين الأجهزة بسرعة 100 أضعاف من WiFi.</p>
+
+            <div class="code-block">
+                <pre><code>مثال أرقام حقيقية لسرعات نقل:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Switch (Wired)     100 Mbps = 12.5 MB/sec (نقل ملف 1GB = 80 ثانية)
+Switch 1Gbps       1000 Mbps = 125 MB/sec (نقل ملف 1GB = 8 ثواني)
+WiFi 5GHz          300-600 Mbps = 37-75 MB/sec (أبطأ من Switch)</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📶 نقطة الوصول اللاسلكية (Access Point - AP)</h2>
+            <p>جهاز يوفر الاتصال اللاسلكي WiFi للأجهزة في المنطقة المحيطة:</p>
+
+            <h3>الخصائس</h3>
+            <ul>
+                <li><strong>الترددات:</strong> 2.4 GHz (نطاق بعيد) أو 5 GHz (سرعة أعلى)</li>
+                <li><strong>المعايير:</strong> WiFi 4 (802.11n) → WiFi 5 (802.11ac) → WiFi 6 (802.11ax)</li>
+                <li><strong>المدى:</strong> 2.4 GHz يصل ل 100-150 متر، 5 GHz يصل ل 50-60 متر</li>
+                <li><strong>الأمان:</strong> WPA2 أو WPA3 تشفير</li>
+            </ul>
+
+            <h3>الفرق بين AP والموجه</h3>
+            <ul>
+                <li><strong>Access Point وحده:</strong> شبكة لاسلكية فقط (يحتاج موجه)</li>
+                <li><strong>الموجه (Wireless Router):</strong> يجمع بين الموجه و AP</li>
+            </ul>
+
+            <h3>مثال واقعي</h3>
+            <p>في قهوة ستاربكس: عند الدخول تتصل بـ "Starbucks WiFi" - هذه شبكة من عدة Access Points موزعة في المكان. جهاز الهاتف يختار أقربها تلقائياً.</p>
+
+            <div class="code-block">
+                <pre><code>معايير WiFi و سرعاتها:
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+WiFi 4 (802.11n)     2015 - حتى 600 Mbps
+WiFi 5 (802.11ac)    2017 - حتى 1300 Mbps  
+WiFi 6 (802.11ax)    2020 - حتى 10 Gbps!!
+
+ملاحظة: السرعة النظرية ≠ السرعة الحقيقية
+الحقيقية تكون 50-70% من النظرية</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>💾 بطاقة الواجهة الشبكية (NIC - Network Interface Card)</h2>
+            <p>جهاز صغيرة داخل كل حاسوب تسمح له بالاتصال بالشبكة:</p>
+
+            <h3>الأنواع</h3>
+            <ul>
+                <li><strong>Ethernet (سلكي):</strong> موجودة في كل كمبيوتر حديث</li>
+                <li><strong>WiFi (لاسلكي):</strong> موجودة في الأجهزة المحمولة</li>
+                <li><strong>السرعة:</strong> 10/100 Mbps (قديم) أو 1 Gbps (حديث)</li>
+            </ul>
+
+            <h3>عنوان MAC</h3>
+            <p>كل بطاقة شبكة لها عنوان MAC فريد عالمياً بصيغة: 00:1A:2B:3C:4D:5E</p>
+            <p>هذا العنوان مثل رقم هاتفك - فريد جداً ولا يتكرر في العالم</p>
+
+            <h3>مثال لعرض عنوان MAC على الويندوز</h3>
+            <div class="code-block">
+                <pre><code>في سطر الأوامر (Command Prompt):
+C:\> ipconfig /all
+
+Physical Address (MAC): 00:23:45:AB:CD:EF ← عنوان ماك فريد
+IPv4 Address: 192.168.1.100
+Subnet Mask: 255.255.255.0
+Default Gateway: 192.168.1.1</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🖥️ الخوادم (Servers)</h2>
+            <p>أجهزة قوية جداً مخصصة لتقديم خدمات لأجهزة أخرى:</p>
+
+            <h3>مثال على أنواع الخوادم</h3>
+            <ul>
+                <li><strong>خادم DNS:</strong> يرجع عنوان IP للأسماء (google.com → 142.250.185.46)</li>
+                <li><strong>خادم الويب:</strong> يخدم صفحات HTML (Apache, IIS)</li>
+                <li><strong>خادم البريد:</strong> يخزن ويرسل البريد الإلكتروني</li>
+                <li><strong>خادم قاعدة البيانات:</strong> يخزن بيانات ملايين المستخدمين</li>
+                <li><strong>خادم الملفات:</strong> يسمح بمشاركة الملفات</li>
+            </ul>
+
+            <h3>مثال واقعي</h3>
+            <p>عندما تدخل حسابك البنكي: هاتفك يتواصل مع خادم قاعدة بيانات ضخم يحتوي على بيانات ملايين العملاء. هذا الخادم يعمل 24/7 بأمان عالي جداً والموقع مشفر بـ HTTPS.</p>
+
+            <h3>الفرق بين Client و Server</h3>
+            <div class="code-block">
+                <pre><code>Client (العميل)          Server (الخادم)
+━━━━━━━━━━━━━━━━         ━━━━━━━━━━━━━━━
+جهازك الشخصي             حاسب قوي جداً
+يطلب الخدمات             يقدم الخدمات
+متوقف أحياناً            يعمل 24/7
+آحادي الاستخدام           يخدم الآلاف
+مثال: متصفح              مثال: google.com</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🔌 الكابلات والموصلات</h2>
+            <p>القنوات التي تنقل البيانات بين الأجهزة:</p>
+
+            <h3>أنواع الكابلات</h3>
+            <ul>
+                <li><strong>Ethernet Cable (Cat5/Cat6):</strong> الكابل الأوسط الأصفر - للشبكات السلكية</li>
+                <li><strong>فايبر البصري:</strong> كابل رفيع جداً ينقل ضوء بسرعة الضوء - للمسافات الطويلة</li>
+                <li><strong>USB:</strong> لأجهزة معينة</li>
+                <li><strong>الموجات اللاسلكية:</strong> WiFi و Bluetooth (لا تحتاج سلك)</li>
+            </ul>
+
+            <h3>معايير الكابلات</h3>
+            <div class="code-block">
+                <pre><code>Cat5   - حتى 100 Mbps (قديم جداً)
+Cat5e  - حتى 1 Gbps (شائع)
+Cat6   - حتى 10 Gbps (حديث)
+Cat6a  - حتى 10 Gbps (عالي الجودة)
+Cat7   - حتى 100 Gbps (مستقبل)
+
+التوصيل: كابل Ethernet يدخل الموجه من جهة
+ويدخل الكمبيوتر من الأخرى
+ينقل البيانات في الاتجاهين في نفس الوقت</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>⚡ مصادر الطاقة غير المنقطعة (UPS)</h2>
+            <p>أجهزة تحتفظ بالطاقة عند انقطاع الكهرباء:</p>
+
+            <ul>
+                <li><strong>بطاريات داخلية:</strong> توفير طاقة لـ 15-30 دقيقة</li>
+                <li><strong>الفائدة:</strong> إطفاء الخوادم بشكل آمن بدل الانقطاع الفجائي</li>
+                <li><strong>الحجم:</strong> صغيرة (4 كيلو وات) أو كبيرة جداً (ميجاوات)</li>
+                <li><strong>الاستخدام:</strong> ضروروية في مراكز البيانات والبنوك</li>
+            </ul>
+        </section>
+
+        <!-- Videos Section at End -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات الشرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 الموجهات والمحولات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">كيفية عمل الموجهات والمحولات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📶 نقاط الوصول اللاسلكية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">أجهزة WiFi والاتصال اللاسلكي</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 بطاقات الشبكة (NIC)</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">بطاقات الواجهة وعناوين MAC</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🖥️ الخوادم والعملاء</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الفرق بين Client و Server</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔌 الكابلات والموصلات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">أنواع الكابلات والتوصيل</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚡ أنظمة الطاقة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">UPS والبطاريات الاحتياطية</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="networking.html" class="btn-back">← العودة إلى الشبكات</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

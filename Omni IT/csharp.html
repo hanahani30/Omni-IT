@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>C# - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>#️⃣ C#</h1>
+            <p>لغة برمجة قوية لتطوير التطبيقات</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن C#</h2>
+            <p>C# هي لغة برمجة حديثة من Microsoft، تُستخدم لتطوير تطبيقات Windows والألعاب والويب. تتميز بالبساطة والكفاءة والتوافق مع منصات متعددة.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔷 أساسيات C#</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">المتغيرات والدوال والفئات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎮 تطوير الألعاب</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Unity و C#</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🌐 تطوير الويب</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">ASP.NET و Web APIs</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرنامج الأول - Hello World</h2>
+            <div class="code-block">
+                <pre><code>using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("مرحباً في C#!");
+    }
+}
+
+النتيجة:
+مرحباً في C#!
+
+شرح الكود:
+├─ using System : استيراد مجال النظام
+├─ class Program : تعريف الفئة
+└─ Main() : دالة البرنامج الرئيسية</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الفئات والكائنات</h2>
+            <div class="code-block">
+                <pre><code>using System;
+
+// تعريف فئة Student
+class Student {
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public double GPA { get; set; }
+    
+    // بناء الفئة
+    public Student(string name, int age, double gpa) {
+        Name = name;
+        Age = age;
+        GPA = gpa;
+    }
+    
+    // دالة لعرض المعلومات
+    public void Display() {
+        Console.WriteLine($"الاسم: {Name}");
+        Console.WriteLine($"العمر: {Age}");
+        Console.WriteLine($"المعدل: {GPA}");
+    }
+}
+
+class Program {
+    static void Main() {
+        // إنشاء كائن
+        Student student = new Student("أحمد", 20, 3.8);
+        student.Display();
+        
+        // كائن آخر
+        Student student2 = new Student("فاطمة", 21, 3.9);
+        student2.Display();
+    }
+}
+
+النتيجة:
+الاسم: أحمد
+العمر: 20
+المعدل: 3.8
+الاسم: فاطمة
+العمر: 21
+المعدل: 3.9</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الواجهات والوراثة</h2>
+            <div class="code-block">
+                <pre><code>using System;
+
+// واجهة (Interface)
+interface IAnimal {
+    void Speak();
+    void Move();
+}
+
+// فئة قاعدية
+class Animal {
+    public string Name { get; set; }
+    
+    public Animal(string name) {
+        Name = name;
+    }
+}
+
+// فئة مشتقة
+class Dog : Animal, IAnimal {
+    public Dog(string name) : base(name) { }
+    
+    public void Speak() {
+        Console.WriteLine($"{Name} يعوي: وووووو!");
+    }
+    
+    public void Move() {
+        Console.WriteLine($"{Name} يركض بسرعة");
+    }
+}
+
+class Program {
+    static void Main() {
+        Dog dog = new Dog("ماكس");
+        dog.Speak();
+        dog.Move();
+    }
+}
+
+النتيجة:
+ماكس يعوي: وووووو!
+ماكس يركض بسرعة</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🎮 استخدامات C# الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. الألعاب ثلاثية الأبعاد
+   └─ مثال: Unity Engine
+      ├─ لعبة Pokémon GO
+      ├─ لعبة Hearthstone
+      ├─ لعبة Hollow Knight
+      └─ ملايين اللاعبين
+
+2. تطبيقات سطح المكتب
+   └─ مثال: Windows Forms و WPF
+      ├─ برامج Microsoft Office
+      ├─ Visual Studio
+      ├─ برامج الشركات الكبرى
+      └─ واجهات احترافية
+
+3. تطبيقات الويب
+   └─ مثال: ASP.NET Core
+      ├─ خوادم ويب قوية
+      ├─ تطبيقات SPA
+      ├─ APIs RESTful
+      └─ شركات: Stack Overflow, Dell
+
+4. تطبيقات الهاتف
+   └─ مثال: Xamarin
+      ├─ تطبيقات iOS و Android
+      ├─ مشاركة الكود بين المنصات
+      └─ شركات: Slack, VMware</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 LINQ</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">معالجة البيانات في C#</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 قواعد البيانات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Entity Framework و SQL</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 المشاريع الحقيقية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">مشاريع كاملة بـ C#</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

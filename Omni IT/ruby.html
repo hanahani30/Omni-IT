@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ruby - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>💎 Ruby</h1>
+            <p>لغة برمجة أنيقة وبسيطة</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>مقدمة عن Ruby</h2>
+            <p>Ruby هي لغة برمجة حديثة مشهورة بأناقتها وسهولة قراءتها. تُستخدم بكثرة في تطوير تطبيقات الويب خاصة مع إطار العمل Ruby on Rails.</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💎 أساسيات Ruby</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">المتغيرات والدوال والبيانات</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🚂 Ruby on Rails</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تطوير تطبيقات الويب الكاملة</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">💾 قواعد البيانات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">العمل مع Active Record</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>البرنامج الأول - Hello World</h2>
+            <div class="code-block">
+                <pre><code>puts "مرحباً في Ruby!"
+
+النتيجة:
+مرحباً في Ruby!
+
+شرح الكود:
+└─ puts : طباعة النص مع سطر جديد</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>المتغيرات والأنواع</h2>
+            <div class="code-block">
+                <pre><code">name = "أحمد"
+age = 25
+height = 1.75
+is_student = true
+
+# طباعة المتغيرات
+puts "الاسم: #{name}"
+puts "العمر: #{age}"
+puts "الطول: #{height} متر"
+puts "هل هو طالب: #{is_student}"
+
+# المصفوفات
+numbers = [1, 2, 3, 4, 5]
+students = ["أحمد", "فاطمة", "علي"]
+
+puts numbers.inspect
+puts students.inspect
+
+# الحاموس (Hash)
+person = {
+    "name" => "أحمد",
+    "age" => 25,
+    "city" => "الرياض"
+}
+
+puts person["name"]
+
+النتيجة:
+الاسم: أحمد
+العمر: 25
+الطول: 1.75 متر
+هل هو طالب: true
+[1, 2, 3, 4, 5]
+["أحمد", "فاطمة", "علي"]
+أحمد</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>الدوال والفئات</h2>
+            <div class="code-block">
+                <pre><code"># دالة بسيطة
+def greet(name)
+    "مرحباً يا #{name}!"
+end
+
+puts greet("أحمد")
+
+# فئة
+class Student
+    attr_accessor :name, :age, :gpa
+    
+    def initialize(name, age, gpa)
+        @name = name
+        @age = age
+        @gpa = gpa
+    end
+    
+    def display
+        puts "الاسم: #{@name}"
+        puts "العمر: #{@age}"
+        puts "المعدل: #{@gpa}"
+    end
+end
+
+# إنشاء كائن
+student = Student.new("فاطمة", 20, 3.8)
+student.display
+
+# الحلقات
+[1, 2, 3, 4, 5].each do |number|
+    puts "الرقم: #{number}"
+end
+
+النتيجة:
+مرحباً يا أحمد!
+الاسم: فاطمة
+العمر: 20
+المعدل: 3.8
+الرقم: 1
+الرقم: 2
+الرقم: 3
+الرقم: 4
+الرقم: 5</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🌐 استخدامات Ruby الواقعية</h2>
+            <div class="code-block">
+                <pre><code>1. تطبيقات الويب
+   └─ مثال: Ruby on Rails
+      ├─ Airbnb (في البداية)
+      ├─ GitHub (في البداية)
+      ├─ Hulu
+      └─ تطوير سريع وفعال
+
+2. أتمتة المهام
+   └─ مثال: Chef و Puppet
+      ├─ إدارة خوادم Linux
+      ├─ نشر التطبيقات
+      ├─ إدارة البنية التحتية
+      └─ DevOps
+
+3. البرامج النصية
+   └─ مثال: أدوات سطر الأوامر
+      ├─ معالجة الملفات
+      ├─ إدارة البيانات
+      ├─ توليد التقارير
+      └─ أتمتة المهام
+
+4. تحليل البيانات
+   └─ مثال: Ruby مع Jupyter
+      ├─ تحليل البيانات
+      ├─ الحسابات الإحصائية
+      ├─ تصور البيانات
+      └─ البحث العلمي</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔄 الحلقات والشروط</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التحكم بسير البرنامج</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📚 البلوكات والإغلاقات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">Blocks و Lambdas</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎯 المشاريع الحقيقية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تطبيقات كاملة بـ Ruby</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

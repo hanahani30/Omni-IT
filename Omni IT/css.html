@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="o2.html" class="nav-link">لغات البرمجة</a></li>
+                <li><a href="#" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🎨 CSS</h1>
+            <p>لغة تنسيق وتصميم صفحات الويب</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>مقدمة عن CSS</h2>
+            <p>CSS (Cascading Style Sheets) هي لغة لإضافة التنسيقات والألوان والحركات لصفحات الويب، تُستخدم مع HTML لإنشاء صفحات جميلة واحترافية.</p>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎨 أساسيات CSS</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم المحددات والألوان والخطوط في CSS</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📐 Flexbox و Grid</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تخطيط صفحات احترافية باستخدام Flexbox و Grid</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">✨ الحركات والتأثيرات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إضافة حركات وتأثيرات جميلة للعناصر</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selectors -->
+        <section class="lang-section">
+            <h2>المحددات (Selectors)</h2>
+            <div class="code-block">
+                <pre><code>/* محدد العنصر */
+p {
+    color: blue;
+}
+
+/* محدد الفئة (Class) */
+.highlight {
+    background-color: yellow;
+}
+
+/* محدد الهوية (ID) */
+#header {
+    color: white;
+}
+
+/* محدد الخاصية */
+input[type="text"] {
+    border: 1px solid gray;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Colors and Fonts -->
+        <section class="lang-section">
+            <h2>الألوان والخطوط</h2>
+            <div class="code-block">
+                <pre><code>/* الألوان */
+.red-text {
+    color: red;                    /* اسم اللون */
+    color: #FF0000;                /* Hex */
+    color: rgb(255, 0, 0);         /* RGB */
+}
+
+/* الخطوط */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Box Model -->
+        <section class="lang-section">
+            <h2>نموذج الصندوق (Box Model)</h2>
+            <div class="code-block">
+                <pre><code>/* الهامش والحشو والحدود */
+.box {
+    margin: 20px;           /* هامش خارجي */
+    padding: 15px;          /* حشو داخلي */
+    border: 2px solid blue; /* حد */
+    width: 200px;           /* العرض */
+    height: 100px;          /* الارتفاع */
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Flexbox -->
+        <section class="lang-section">
+            <h2>Flexbox (الصناديق المرنة)</h2>
+            <div class="code-block">
+                <pre><code>.container {
+    display: flex;
+    justify-content: center;  /* محاذاة أفقية */
+    align-items: center;      /* محاذاة عمودية */
+    gap: 20px;               /* المسافة بين العناصر */
+}
+
+.item {
+    flex: 1;  /* توزيع متساوي */
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Grid -->
+        <section class="lang-section">
+            <h2>CSS Grid (الشبكة)</h2>
+            <div class="code-block">
+                <pre><code>.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* 3 أعمدة متساوية */
+    gap: 15px;                           /* المسافة بين العناصر */
+}
+
+.grid-item {
+    background-color: #3498db;
+    padding: 20px;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Animations -->
+        <section class="lang-section">
+            <h2>الحركات والتأثيرات</h2>
+            <div class="code-block">
+                <pre><code>/* Transition (انتقال سلس) */
+.button {
+    background-color: blue;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+/* Keyframes (حركة معقدة) */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.animated {
+    animation: slide 2s infinite;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Responsive -->
+        <section class="lang-section">
+            <h2>التصميم المتجاوب (Responsive Design)</h2>
+            <div class="code-block">
+                <pre><code>/* للشاشات الكبيرة */
+.container {
+    width: 1200px;
+}
+
+/* للشاشات المتوسطة */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Code Editor -->
+        <section class="code-editor-section">
+            <h3>✏️ جرب بنفسك</h3>
+            <p style="color: #f0f0f0; margin-bottom: 1.5rem;">اكتب كود CSS وشاهد النتيجة مباشرة</p>
+            <div class="editor-container">
+                <div class="editor-input">
+                    <textarea id="cssEditor" placeholder="/* اكتب كود CSS هنا */
+/* استخدم العناصر: .box, p, .button */
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+p {
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}" class="css-code"></textarea>
+                </div>
+                <div class="editor-output">
+                    <div id="cssOutput">
+                        اكتب الكود وشغّله لترى النتيجة
+                    </div>
+                </div>
+            </div>
+            <div class="editor-controls">
+                <button class="run-btn" id="runCssBtn">▶️ شغّل الكود</button>
+                <button class="clear-btn" id="clearCssBtn">🗑️ امسح</button>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات شرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🎨 أساسيات CSS</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تعلم المحددات والألوان والخطوط في CSS</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📖 Flexbox و Grid</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">تخطيط صفحات احترافية باستخدام Flexbox و Grid</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">✨ الحركات والتأثيرات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">إضافة حركات وتأثيرات جميلة للعناصر</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="o2.html" class="btn-back">← العودة إلى لغات البرمجة</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الأمن السيبراني - شرح مفصل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='language.css'>
+</head>
+<body dir="rtl">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-icon">💻</span>
+                <span class="logo-text">Omni IT</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="o1.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="networking.html" class="nav-link">الشبكات</a></li>
+                <li><a href="#" class="nav-link">الدورات</a></li>
+                <li><a href="#" class="nav-link">حول</a></li>
+                <li><a href="#" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="language-hero">
+            <h1>🔐 الأمن السيبراني</h1>
+            <p>حماية شاملة للشبكات والبيانات من التهديدات الرقمية</p>
+        </section>
+
+        <!-- Introduction -->
+        <section class="lang-section">
+            <h2>ما هو الأمن السيبراني؟</h2>
+            <p>الأمن السيبراني هو مجموعة من الممارسات والتقنيات والسياسات التي تحمي الأنظمة والشبكات والبيانات من الهجمات الرقمية والسرقة والتدمير والتعديل غير المصرح. مع نمو الإنترنت والاعتماد المتزايد على التكنولوجيا، أصبح الأمن السيبراني ضرورة حتمية لأفراد والشركات والحكومات.</p>
+            <p>التهديدات السيبرانية تتطور باستمرار - يوجد الآن ملايين المحاولات لاختراق الخوادم والأجهزة يومياً. بدون تدابير أمنية قوية، قد تخسر الشركات ملايين الدولارات بسبب سرقة البيانات أو توقف الخدمات. على المستوى الشخصي، قد تفقد أرقام بطاقتك الائتمانية أو هويتك الرقمية.</p>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="lang-section">
+            <h2>🔑 مبادئ CIA للأمن الثلاثة</h2>
+            <p>هذه المبادئ هي أساس الأمن السيبراني العالمي - كل تدابير الأمن تركز على تحقيق هذه الثلاثة في نفس الوقت:</p>
+
+            <h3>1. السرية (Confidentiality)</h3>
+            <p>ضمان أن البيانات الحساسة تصل فقط للأشخاص المصرح لهم والمعتمدين على معرفتها. البيانات القديمة أو الخاصة يجب أن تبقى سرية حتى لا يستطيع أي شخص آخر الوصول إليها. مثاله:</p>
+            <ul>
+                <li><strong>التشفير:</strong> تحويل البيانات إلى أكواد غير مفهومة</li>
+                <li><strong>كلمات المرور:</strong> فقط المستخدم المصرح يعرفها</li>
+                <li><strong>التحكم بالوصول:</strong> تحديد من يمكنه رؤية الملفات</li>
+                <li><strong>حذف آمن:</strong> بيانات القديمة تحذف نهائياً ولا تسترجع</li>
+            </ul>
+
+            <h3>2. سلامة البيانات (Integrity)</h3>
+            <p>التأكد من أن البيانات لم يتم تعديلها أو تغييرها بدون إذن صريح. عندما ترسل ملف مهم لشركة، يجب أن يصلها نفس الملف بدون أي تغيير حتى لو لمسته عشرات الأجهزة الوسيطة:</p>
+            <ul>
+                <li><strong>التوقيع الرقمي:</strong> توقيع إلكتروني يثبت الهوية والملكية</li>
+                <li><strong>الهاش (Hash):</strong> بصمة فريدة للملف - أي تغيير يغيرها</li>
+                <li><strong>فحص المجموع الاختياري:</strong> حساب رياضي للتحقق من صحة البيانات</li>
+                <li><strong>سجلات التدقيق:</strong> تسجيل كل تعديل ومن قام به</li>
+            </ul>
+            <p><strong>مثال:</strong> عندما تحمل ملف من الإنترنت، يمكنك التحقق من بصمته (Hash) للتأكد أنه لم يُعدل من قبل هاكر في الطريق</p>
+
+            <h3>3. التوفر (Availability)</h3>
+            <p>ضمان أن الخدمات والبيانات متاحة دائماً للمستخدمين المصرح لهم والمشروعين. إذا توقفت الخدمة، تصبح القيمة صفر حتى لو كانت محمية:</p>
+            <ul>
+                <li><strong>النسخ المتعددة:</strong> خوادم احتياطية جاهزة</li>
+                <li><strong>المرونة:</strong> النظام يتعافى من الأعطال تلقائياً</li>
+                <li><strong>الصيانة المخطط:</strong> تحديثات آمنة بدون توقف</li>
+                <li><strong>الحماية من هجمات الحرمان:</strong> منع هجمات DDoS التي توقف الخدمات</li>
+            </ul>
+            <p><strong>مثال:</strong> عندما تحاول الدخول لحسابك البنكي، يجب أن تكون الخدمة متاحة 24/7، وإذا توقفت الخدمة حتى لدقيقة واحدة، قد تخسر البنك ملايين</p>
+        </section>
+
+        <section class="lang-section">
+            <h2>⚠️ أنواع الهجمات السيبرانية الشاملة</h2>
+            <p>تتنوع الهجمات الرقمية بشكل كبير. سأشرح أخطرها وأكثرها شيوعاً:</p>
+
+            <h3>1. الفيروسات والبرامج الضارة (Malware)</h3>
+            <p>برامج خاصة مكتوبة بقصد إلحاق الضرر. تصل عادة عبر بريد إلكتروني، تحميل ملفات، أو ثغرات في البرامج:</p>
+            <ul>
+                <li><strong>الفيروسات:</strong> برامج تنسخ نفسها وتنتشر من ملف لآخر</li>
+                <li><strong>الديدان:</strong> برامج تنتشر عبر الشبكة بدون تدخل المستخدم</li>
+                <li><strong>برامج التجسس:</strong> تراقب نشاطك وسرقة بيانات حساسة</li>
+                <li><strong>برامج الفدية:</strong> تشفر بيانات الضحية وتطلب فدية</li>
+                <li><strong>جذور الإدارة:</strong> تعطي المهاجم تحكم كامل على الجهاز</li>
+            </ul>
+
+            <h3>2. هجمات الحرمان من الخدمة (DoS و DDoS)</h3>
+            <p>محاولة إغراق الخادم بطلبات كثيرة جداً حتى لا يستطيع الرد على المستخدمين الشرعيين:</p>
+            <ul>
+                <li><strong>DoS (Denial of Service):</strong> من حاسوب واحد فقط</li>
+                <li><strong>DDoS (Distributed DoS):</strong> من آلاف الأجهزة المُخترقة في نفس الوقت</li>
+                <li><strong>الضرر:</strong> توقف الخدمة والخسائر المالية الضخمة</li>
+                <li><strong>المثال الشهير:</strong> هجمة DDoS على موقع GitHub في 2018 أطاحت بـ 1.3 تيرابايت/ثانية!</li>
+            </ul>
+
+            <h3>3. هجمات التصيد الاحتيالي (Phishing)</h3>
+            <p>انتحال شخصية لخدمة موثوقة (بنك، بريد، فيسبوك) لخداع المستخدم على إدخال بيانات حساسة:</p>
+            <ul>
+                <li><strong>رسائل بريد وهمية:</strong> تبدو من البنك الفعلي لكنها مزيفة</li>
+                <li><strong>مواقع احتيالية:</strong> نسخة مطابقة من الموقع الأصلي</li>
+                <li><strong>رسائل نصية وهمية:</strong> رسالة من "الموارد البشرية" تطلب رابط</li>
+                <li><strong>المساعدة:</strong> افحص عنوان الرسالة والرابط بعناية قبل الضغط</li>
+            </ul>
+
+            <h3>4. هجمات حقن الأكواد (Injection Attacks)</h3>
+            <p>إدراج أكواد خبيثة في حقول الإدخال لتنفيذ أوامر غير مصرح:</p>
+            <ul>
+                <li><strong>SQL Injection:</strong> إدراج أكواد SQL للتعديل على قاعدة البيانات</li>
+                <li><strong>Cross-Site Scripting (XSS):</strong> إدراج جافاسكريبت خبيث</li>
+                <li><strong>Command Injection:</strong> تنفيذ أوامر النظام التشغيل</li>
+                <li><strong>الهدف:</strong> سرقة البيانات أو تعديل الموقع</li>
+            </ul>
+
+            <h3>5. سرقة البيانات والاختراقات</h3>
+            <p>التسلل لقاعدة بيانات والحصول على ملايين السجلات:</p>
+            <ul>
+                <li><strong>اختراق المركز المالي:</strong> سرقة بيانات ملايين العملاء</li>
+                <li><strong>الهندسة الاجتماعية:</strong> خداع الموظفين للكشف عن بيانات حساسة</li>
+                <li><strong>استغلال الثغرات:</strong> استخدام ثغرات متعددة معروفة</li>
+                <li><strong>البيع على Dark Web:</strong> بيع البيانات لمجرمين آخرين</li>
+            </ul>
+
+            <h3>6. هجمات الوسيط (Man-in-the-Middle)</h3>
+            <p>اعتراض الاتصالات بين جهازين لقراءة أو تعديل البيانات:</p>
+            <ul>
+                <li><strong>على WiFi العام:</strong> الاتصال بشبكة غير محمية قد يسمح باعتراض</li>
+                <li><strong>الحل:</strong> استخدام VPN أو HTTPS دائماً</li>
+            </ul>
+
+            <div class="code-block">
+                <pre><code>إحصائيات حقائق مخيفة:
+========================================
+- هجوم سيبراني كل 39 ثانية
+- 2.3 مليار رسالة تصيد احتيالي يومياً
+- 43% بلايين سجل بيانات مخترق سنوياً
+- 2.5 كوينتيليون بايت بيانات تُخلق يومياً
+- 99.9% من البرامج الضارة تستخدم Windows فقط
+- متوسط تكلفة الخرق: 3.86 مليون دولار</code></pre>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>🛡️ تدابير الوقاية والحماية الفعالة</h2>
+            <p>بدلاً من الانتظار حتى يتم اختراقك، يمكنك اتخاذ خطوات قوية لحماية نفسك:</p>
+
+            <h3>1. التشفير (Encryption) - الدرع الأساسي</h3>
+            <p>تحويل البيانات الحساسة إلى رموز لا يفهمها إلا من لديه المفتاح:</p>
+            <ul>
+                <li><strong>التشفير المتماثل:</strong> نفس المفتاح للتشفير وفك التشفير</li>
+                <li><strong>التشفير غير المتماثل:</strong> مفتاح عام وآخر خاص</li>
+                <li><strong>التطبيقات:</strong> HTTPS، البريد المشفر، الرسائل المحمية</li>
+            </ul>
+
+            <h3>2. جدران الحماية (Firewalls)</h3>
+            <p>برامج تراقب حركة البيانات الداخلة والخارجة وتحجب المشبوهة:</p>
+            <ul>
+                <li><strong>جدران الويندوز:</strong> للحماية على جهازك الشخصي</li>
+                <li><strong>جدران الشركات:</strong> لحماية الشبكة كاملة</li>
+                <li><strong>القواعد:</strong> السماح أو الحجب حسب عناوين IP والمنافذ</li>
+            </ul>
+
+            <h3>3. كلمات المرور القوية</h3>
+            <p>كلمات المرور الضعيفة هي السبب الأول للاختراقات:</p>
+            <ul>
+                <li><strong>المتطلبات:</strong> 12+ أحرف، حروف صغيرة + كبيرة + أرقام + رموز</li>
+                <li><strong>تجنب:</strong> تاريخ ميلادك، اسمك، كلمات قاموس شهيرة</li>
+                <li><strong>التحديث:</strong> غير كلمة المرور كل 3 أشهر</li>
+                <li><strong>مثال قوي:</strong> "Tr0p!cal$unset2024#Secure"</li>
+            </ul>
+
+            <h3>4. المصادقة متعددة العوامل (MFA)</h3>
+            <p>عدم الاعتماد على كلمة المرور وحدها - اطلب عاملين أو أكثر:</p>
+            <ul>
+                <li><strong>ما تعرفه:</strong> كلمة مرور</li>
+                <li><strong>ما تملكه:</strong> هاتفك، مفتاح USB</li>
+                <li><strong>ما أنت عليه:</strong> بصمة إصبع، تحليل وجه</li>
+                <li><strong>أين أنت:</strong> الموقع الجغرافي</li>
+            </ul>
+
+            <h3>5. التحديثات الدورية</h3>
+            <p>البرامج الحديثة تحتوي على إصلاحات للثغرات الأمنية المكتشفة:</p>
+            <ul>
+                <li><strong>أنظمة التشغيل:</strong> Windows و Mac و Linux</li>
+                <li><strong>البرامج:</strong> متصفح الويب، Java، Adobe</li>
+                <li><strong>التطبيقات:</strong> جميع تطبيقاتك للهاتف</li>
+                <li><strong>أهميتها:</strong> 80% من الهجمات تستخدم ثغرات قديمة معروفة</li>
+            </ul>
+
+            <h3>6. برامج مكافحة الفيروسات</h3>
+            <p>برامج متخصصة في اكتشاف والقضاء على البرامج الضارة:</p>
+            <ul>
+                <li><strong>الفحص الدوري:</strong> فحص شامل لكل ملفاتك</li>
+                <li><strong>الحماية الفعلية:</strong> منع البرامج قبل تثبيتها</li>
+                <li><strong>البرامج الموصى:</strong> Windows Defender (مدمج)، Norton, Kaspersky</li>
+            </ul>
+
+            <h3>7. النسخ الاحتياطية (Backups)</h3>
+            <p>حفظ نسخ من بياناتك المهمة في أماكن آمنة منفصلة:</p>
+            <ul>
+                <li><strong>القاعدة 3-2-1:</strong> 3 نسخ، على وسيطين مختلفين، واحدة خارج الموقع</li>
+                <li><strong>التشفير:</strong> ضمان أن النسخة الاحتياطية مشفرة</li>
+                <li><strong>الاختبار:</strong> تأكد أن النسخة تعمل بفعل</li>
+            </ul>
+
+            <h3>8. التوعية والتدريب</h3>
+            <p>الثقافة الأمنية هي أقوى سلاح:</p>
+            <ul>
+                <li><strong>التدريب:</strong> كيفية التعرف على المشبوهات</li>
+                <li><strong>الحذر:</strong> عدم فتح رسائل من أشخاص غريبين</li>
+                <li><strong>الإبلاغ:</strong> أخبر المسؤول إذا رأيت شيء غريب</li>
+            </ul>
+        </section>
+
+        <section class="lang-section">
+            <h2>👤 إدارة الهويات والمصادقة</h2>
+            <p>التأكد من أنك فعلاً الشخص الذي تقول أنك عليه:</p>
+            <ul>
+                <li><strong>المصادقة:</strong> إثبات هويتك (كلمة مرور، بيومتريكس)</li>
+                <li><strong>التفويض:</strong> ما المسموح لك بفعله بعد إثبات الهوية</li>
+                <li><strong>المحاسبة:</strong> تسجيل من فعل ماذا وتتى</li>
+            </ul>
+        </section>
+
+        <!-- Videos Section at End -->
+        <section class="lang-section">
+            <h2>📹 فيديوهات الشرح</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔐 مبادئ CIA الأساسية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">السرية والسلامة والتوفر</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">⚠️ أنواع الهجمات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الفيروسات والتصيد والحقن</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🛡️ أساليب الحماية</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التشفير والجدران والكلمات</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="lang-section">
+            <h2>📹 فيديوهات إضافية</h2>
+            <div class="videos-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">🔑 التشفير والمفاتيح</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">التشفير المتماثل وغير المتماثل</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">👤 إدارة الهويات</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">المصادقة والتفويض والمحاسبة</p>
+                </div>
+                <div class="video-item" style="background: #1e1e1e; border-radius: 10px; padding: 15px; text-align: center;">
+                    <h3 style="color: #3498db; margin-bottom: 15px;">📊 الكشف والاستجابة</h3>
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 5px;"></iframe>
+                    <p style="color: #bdc3c7; margin-top: 10px; font-size: 14px;">الكشف عن التهديدات والرد عليها</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="back-button">
+            <a href="networking.html" class="btn-back">← العودة إلى الشبكات</a>
+        </section>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>
